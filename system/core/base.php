@@ -8,7 +8,6 @@ class base {
             if ($handle = opendir($dir)) {
                 while (($file = readdir($handle)) !== false) {
                     if (filetype($dir.$file) == 'file' && !in_array($file, $exclude)) {
-                        echo $dir.$file.'<br/>';
                         require_once($dir.$file);
                     }
                 }
