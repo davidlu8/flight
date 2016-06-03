@@ -1,18 +1,12 @@
 <?php
 class FL {
-    private static $fl;
-    public function __construct() {
-        echo 'ddd';
-    }
+    private static $instance;
 
-    public static function getInstance() {
-        return self::$fl;
-    }
+    function __callStatic($funcname, $arguments) {
+        if (class_exists($funcname)) {
 
-    public static function uri() {
-        if (!isset(self::$fl->uri) || !(self::$fl->uri instanceof uri)) {
-            self::$fl->uri = new uri();
+        } else {
+            die('This method is not exists.');
         }
-        return self::$fl->uri;
     }
 }
