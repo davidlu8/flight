@@ -27,26 +27,6 @@ class Common {
         return substr(str_shuffle(str_repeat($chars, rand(5, 8))), 0, $len);
     }
 
-    /**
-     * IP地址获取
-     * @return string 如：192.168.1.1 失败的情况下，返回空
-     */
-    public static function getIp() {
-        if(!empty($_SERVER["HTTP_CLIENT_IP"])) {
-            $cip = $_SERVER["HTTP_CLIENT_IP"];
-        } else if(!empty($_SERVER["HTTP_X_FORWARDED_FOR"])) {
-            $cip = $_SERVER["HTTP_X_FORWARDED_FOR"];
-        } else if(!empty($_SERVER["REMOTE_ADDR"])) {
-            $cip = $_SERVER["REMOTE_ADDR"];
-        } else {
-            $cip = '';
-        }
-        preg_match("/[\d\.]{7,15}/", $cip, $cips);
-        $cip = isset($cips[0]) ? $cips[0] : 'unknown';
-        unset($cips);
-        return $cip;
-    }
-
     /*
      * xml生成
      */
