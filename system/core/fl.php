@@ -12,5 +12,4 @@ class FL {
             die('This method is not exists.');
         }
     }
-
 }
