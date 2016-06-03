@@ -13,7 +13,7 @@ class FL {
         }
     }
 
-    private  function __get($propname) {
+    private function __get($propname) {
         if (class_exists($propname)) {
             if (!isset(self::$instance[$propname]) || !(self::$instance[$propname] instanceof $propname)) {
                 self::$instance[$propname] = new $propname();
