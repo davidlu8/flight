@@ -22,7 +22,7 @@ class base {
      * IP地址获取
      * @return string 如：192.168.1.1 失败的情况下，返回空
      */
-    public static function getIp() {
+    public static function ip() {
         if(!empty($_SERVER["HTTP_CLIENT_IP"])) {
             $cip = $_SERVER["HTTP_CLIENT_IP"];
         } else if(!empty($_SERVER["HTTP_X_FORWARDED_FOR"])) {
@@ -38,10 +38,14 @@ class base {
         return $cip;
     }
 
-    public static function currentPath() {
+    public static function url() {
         $path = sprintf('http://%s', $_SERVER['HTTP_HOST']);
         $path .= !empty($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '';
         $path .= !empty($_SERVER['QUERY_STRING']) ? '?'.$_SERVER['QUERY_STRING'] : '';
         return $path;
+    }
+
+    public static function controller() {
+        return sprintf('%s.%s', FL::uri()->segments[0], FL::uri()->segments[1]);
     }
 }
