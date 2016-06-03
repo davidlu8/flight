@@ -6,3 +6,6 @@ base::autoRequire(SYSTEMPATH.'libraries');
 
 echo '<pre>';
 print_r(FL::uri());
+
+$app = new application();
+$app->run();
