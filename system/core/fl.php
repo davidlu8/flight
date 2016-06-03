@@ -2,7 +2,7 @@
 class FL {
     private static $instance;
 
-    function __callStatic($funcname, $arguments) {
+    public function __callStatic($funcname, $arguments) {
         if (class_exists($funcname)) {
 
         } else {
