@@ -7,3 +7,6 @@ class application {
         Fl::logger()->debug(" Agent : ", $_SERVER['HTTP_USER_AGENT']);
     }
 }
+
+echo '<pre>';
+print_r($_SERVER);
