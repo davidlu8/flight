@@ -5,6 +5,12 @@ class uri {
     function __construct() {
         $this->url = substr($_SERVER['REQUEST_URI'], 1);
         $this->segments = explode('/', $this->url);
+        if (empty($this->segments[0])) {
+            $this->segments[0] = 'home';
+        }
+        if (empty($this->segments[1])) {
+            $this->segments[1] = 'index';
+        }
     }
 
     public function item($index) {
