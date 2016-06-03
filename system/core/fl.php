@@ -6,7 +6,7 @@ class FL {
     }
 
     public static function uri() {
-        if (!(self::$fl->uri instanceof uri)) {
+        if (!isset(self::$fl->uri) || !(self::$fl->uri instanceof uri)) {
             self::$fl->uri = new uri();
         }
         return self::$fl->uri;
