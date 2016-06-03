@@ -141,9 +141,10 @@ class logger extends log {
 
     protected $logFile;
 
-    public function __construct($logFolder, $level, $dateFormat = 'Y-m-d H:i:s') {
-        $this->logFolder = $logFolder;
-        $this->dateFormat = $dateFormat;
+    public function __construct() {
+        $this->logFolder = './runtime';
+        $level = log::LOG_LEVEL_DEBUG | log::LOG_LEVEL_INFO | log::LOG_LEVEL_ERROR;
+        $this->dateFormat = 'Y-m-d H:i:s';
 
         parent::__construct($level);
 
