@@ -1,7 +1,7 @@
 <?php
 class FL {
     private static $fl;
-    function __construct() {
+    static function __construct() {
         echo 'ddd';
     }
 
