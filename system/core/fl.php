@@ -12,4 +12,15 @@ class FL {
             die('This method is not exists.');
         }
     }
+
+    public static function __get($propname) {
+        if (class_exists($propname)) {
+            if (!isset(self::$instance[$propname]) || !(self::$instance[$propname] instanceof $propname)) {
+                self::$instance[$propname] = new $propname();
+            }
+            return self::$instance[$propname];
+        } else {
+            die('This method is not exists.');
+        }
+    }
 }
