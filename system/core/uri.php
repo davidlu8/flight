@@ -1,5 +1,4 @@
 <?php
-
 class uri {
     public $url;
     public $segments = array();
