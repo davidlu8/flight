@@ -1,6 +1,6 @@
 <?php
 class FL {
-    private static $fl;
+    private static $fl = new stdClass();
     public static function getInstance() {
         return self::$fl;
     }
