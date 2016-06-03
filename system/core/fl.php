@@ -2,7 +2,7 @@
 class FL {
     private static $instance;
 
-    public function __callStatic($funcname, $arguments) {
+    public static function __callStatic($funcname, $arguments) {
         if (class_exists($funcname)) {
             if (!isset(self::$instance[$funcname]) || !(self::$instance[$funcname] instanceof $funcname)) {
                 self::$instance[$funcname] = new $funcname($arguments);
