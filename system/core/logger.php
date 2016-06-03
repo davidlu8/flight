@@ -138,6 +138,7 @@ class logger extends log {
 
     protected $logFolder;
     protected $dateFormat;
+    protected $logWrite = 1;
 
     protected $logFile;
 
@@ -152,7 +153,7 @@ class logger extends log {
     }
 
     protected function init() {
-        if (!CFG_LOG_WRITE) return;
+        if (!$this->logWrite) return;
 
         $folder = $this->logFolder
             . DIRECTORY_SEPARATOR . 'log'
@@ -172,7 +173,7 @@ class logger extends log {
     }
 
     public function log($type, $msg, $data) {
-        if (!CFG_LOG_WRITE) return;
+        if (!$this->logWrite) return;
 
         $msgArr = array();
         $msgArr[] = date($this->dateFormat, $_SERVER['REQUEST_TIME']);
