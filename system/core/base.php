@@ -1,6 +1,9 @@
 <?php
 class base {
     public static function autoRequire($dir, $exclude = array()) {
+        if (!preg_match('/.+\/$/', $dir)) {
+            $dir .= '/';
+        }
         if (is_dir($dir)) {
             if ($handle = opendir($dir)) {
                 while (($file = readdir($handle)) !== false) {
