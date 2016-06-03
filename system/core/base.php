@@ -48,4 +48,12 @@ class base {
     public static function controller() {
         return sprintf('%s.%s', FL::uri()->segments[0], FL::uri()->segments[1]);
     }
+
+    public static function control() {
+        return FL::uri()->segments[0];
+    }
+
+    public static function method() {
+        return FL::uri()->segments[1];
+    }
 }
