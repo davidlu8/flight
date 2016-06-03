@@ -1,6 +1,10 @@
 <?php
 class FL {
-    private static $fl = new stdClass();
+    private static $fl;
+    function __construct() {
+        echo 'ddd';
+    }
+
     public static function getInstance() {
         return self::$fl;
     }
