@@ -4,7 +4,10 @@ class FL {
 
     public function __callStatic($funcname, $arguments) {
         if (class_exists($funcname)) {
-
+            if (!isset(self::$instance[$funcname]) || !(self::$instance[$funcname] instanceof $funcname)) {
+                self::$instance[$funcname] = new $funcname($arguments);
+            }
+            return self::$instance[$funcname];
         } else {
             die('This method is not exists.');
         }
