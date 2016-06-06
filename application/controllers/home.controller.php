@@ -5,7 +5,7 @@ class homeControl extends baseControl {
     }
 
     public function index() {
-        $fp = fsockopen('api.yuai6.com', 80, $errno, $errstr, 30);
+        $fp = fsockopen('www.yuai6.com', 80, $errno, $errstr, 30);
         if ($fp) {
             $param = array(
                 'service' => 'user.info',
