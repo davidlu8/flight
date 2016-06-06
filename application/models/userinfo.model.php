@@ -1,7 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: David
- * Date: 2016/6/6
- * Time: 12:08
- */
+class userinfoModel extends BaseModel {
+    public $tableName = 't_user_info';
+    public $primaryKey = 'USERINFO_USER_ID';
+
+}
