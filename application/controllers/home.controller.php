@@ -6,7 +6,7 @@ class homeControl extends baseControl {
 
     public function index() {
         $fp = fsockopen('api.yuai6.com', 80, $errno, $errstr, 30);
-        if (!$fp) {
+        if ($fp) {
             fputs($fp, 'POST /api.php HTTP/1.1\r\n');
             fputs($fp, 'Host: api.yuai.com\r\n');
             fputs($fp, 'Connection: Close\r\n\r\n');
