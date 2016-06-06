@@ -5,7 +5,7 @@ class homeControl extends baseControl {
     }
 
     public function index() {
-        $fp = fsockopen('www.warmvoice.cn', 80, $errno, $errstr, 30);
+        $fp = fsockopen('api.yuai6.com', 80, $errno, $errstr, 30);
         if ($fp) {
             $param = array(
                 'service' => 'user.info',
@@ -13,8 +13,8 @@ class homeControl extends baseControl {
                 'type' => 0,
             );
             $data = http_build_query($param);
-            fputs($fp, "POST / HTTP/1.1\r\n");
-            fputs($fp, "Host: www.warmvoice.cn\r\n");
+            fputs($fp, "POST /api.php HTTP/1.1\r\n");
+            fputs($fp, "Host: api.yuai6.cn\r\n");
             fputs($fp, "Content-type: application/x-www-form-urlencoded\r\n");
             fputs($fp, "Content-length: ".strlen($data)."\r\n");
             fputs($fp, "Connection: Close\r\n\r\n");
