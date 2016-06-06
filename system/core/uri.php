@@ -5,8 +5,6 @@ class uri {
     function __construct() {
         $this->url = substr($_SERVER['REQUEST_URI'], 1);
         $this->segments = preg_grep('/[\w]+/', explode('/', $this->url));
-        echo '<pre>';
-        print_r($this->segments);
         if (!isset($this->segments[0]) || empty($this->segments[0])) {
             $this->segments[0] = 'home';
         }
