@@ -12,5 +12,5 @@
 </head>
 <body>
 </body>
-<?php echo date('H:i', strototime($item['GIFTHISTORY_ADD_TIME'])) ?>
+<?php echo date('H:i', strtotime($item['GIFTHISTORY_ADD_TIME'])) ?>
 </html>
