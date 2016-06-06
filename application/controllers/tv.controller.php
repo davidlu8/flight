@@ -18,6 +18,6 @@ class tvControl extends baseControl {
         $userInfo = $userinfoDal->find($item['GIFTHISTORY_USER_ID']);
         $gift = $gifthistoryDal->find($item['GIFTHISTORY_GIFT_ID']);
 
-
+        require APPPATH.'views/gift.php';
     }
 }
