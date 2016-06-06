@@ -15,7 +15,7 @@ class homeControl extends baseControl {
             $data = http_build_query($param);
             fputs($fp, 'POST /tv HTTP/1.1\r\n');
             fputs($fp, 'Host: www.yuai6.com\r\n');
-            fputs($fp, "Content-type: application/x-www-form-urlencodedrn");
+            fputs($fp, "Content-type: application/x-www-form-urlencoded\r\n");
             fputs($fp, 'Content-length: '.strlen($data).'\r\n');
             fputs($fp, 'Connection: Close\r\n\r\n');
             fputs($fp, $data);
