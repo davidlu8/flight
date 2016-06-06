@@ -17,8 +17,8 @@ class homeControl extends baseControl {
             fputs($fp, "Host: www.yuai6.com\r\n");
             fputs($fp, "Content-type: application/x-www-form-urlencoded\r\n");
             fputs($fp, "Content-length: ".strlen($data)."\r\n");
+            fputs($fp, "Cookie: cur_query=you&me\r\n");
             fputs($fp, "Connection: Close\r\n\r\n");
-            fputs($fp, "Cookie: cur_query=you&me\r\n\r\n");
             fputs($fp, $data);
             $response = '';
             while($row=fread($fp, 4096)){
