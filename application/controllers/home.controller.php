@@ -26,6 +26,9 @@ class homeControl extends baseControl {
 
             fclose($fp);
 
+            echo $errno;
+            echo $errstr;
+
             echo $response;
         } else {
             die('The host can not open');
