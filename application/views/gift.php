@@ -12,5 +12,5 @@
 </head>
 <body>
 </body>
-<?php echo date('H:i', strtotime($item['GIFTHISTORY_ADD_TIME'])) ?>
+<?php echo date('H:i', strtotime($item['GIFTHISTORY_ADD_TIME'])) ?> <a href="<?php echo $ownerInfo['USERINFO_USER_ID'] ?>" class="text-danger"><?php echo $ownerInfo['USERINFO_NICKNAME'] ?></a>
 </html>
