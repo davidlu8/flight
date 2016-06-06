@@ -37,5 +37,6 @@ class homeControl extends baseControl {
     public function test() {
         echo '<pre>';
         print_r($_POST);
+        print_r($_COOKIE);
     }
 }
