@@ -2,7 +2,7 @@
 class Load {
     public static function model($name) {
         $name = strtolower($name);
-        $modelFilePath = sprintf('%smodel/%s.model.php', APPPATH, $name);
+        $modelFilePath = sprintf('%smodels/%s.model.php', APPPATH, $name);
         if (!file_exists($modelFilePath)) {
             die("Control class does not exist : ".$modelFilePath);
         }
