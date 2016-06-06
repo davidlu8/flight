@@ -13,7 +13,7 @@ class homeControl extends baseControl {
                 'type' => 0,
             );
             $data = http_build_query($param);
-            fputs($fp, "POST /api.php HTTP/1.1\r\n");
+            fputs($fp, "POST /api.php? HTTP/1.1\r\n");
             fputs($fp, "Host: api.yuai6.cn\r\n");
             fputs($fp, "Content-type: application/x-www-form-urlencoded\r\n");
             fputs($fp, "Content-length: ".strlen($data)."\r\n");
