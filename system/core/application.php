@@ -28,6 +28,8 @@ class application {
             die("Control class does not exist : ".$controlClassFile);
         }
 
+        DB::initialize();
+
         try {
             $controlClass = $this->control . "Control";
             include_once($controlClassFile);
