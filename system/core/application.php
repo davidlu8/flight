@@ -5,6 +5,9 @@ class application {
     private $paras;
 
     public function __construct() {
+        $this->control = base::control();
+        $this->method = base::method();
+        $this->paras = base::paras();
     }
 
     public function run() {
@@ -19,21 +22,29 @@ class application {
             Fl::logger()->debug(" File : ", json_encode($_FILES));
         }
 
-        $control = base::control();
-        $method = base::method();
-        $paras = base::paras();
-        $controlClassFile = APPPATH."controllers/".base::control().".controller.php";
+        $controlClassFile = APPPATH."controllers/".$this->control.".controller.php";
         if (!file_exists($controlClassFile)) {
-            Fl::logger()->debug("Control class does not exist ", $controlClassFile);
+            Fl::logger()->error("Control class does not exist ", $controlClassFile);
             die("Control class does not exist : ".$controlClassFile);
         }
 
         try {
-            $controlClass = base::control() . "Control";
+            $controlClass = $this->control . "Control";
             include_once($controlClassFile);
-            $this->_control = new $controlClass();
-        } catch (Exception $ae) {
+            $controlItem = new $controlClass();
 
+            if (method_exists($controlItem, $this->method))
+                try {
+                    call_user_func(array($this->control, $this->method), $this->paras);
+                } catch(Exception $e) {
+                    Fl::logger()->error('error method', $e->getCode().'|'.$e->getMessage());
+                }
+            else {
+                Fl::logger()->error("error method", $this->method);
+                die("error method : ".$this->method);
+            }
+        } catch (Exception $e) {
+            die("error method : ".$e->getMessage());
         }
 
     }
