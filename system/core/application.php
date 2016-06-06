@@ -31,6 +31,7 @@ class application {
         DB::initialize();
 
         try {
+
             $controlClass = $this->control . "Control";
             include_once($controlClassFile);
             $controlItem = new $controlClass();
