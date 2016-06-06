@@ -5,7 +5,7 @@ class homeControl extends baseControl {
     }
 
     public function index() {
-        $fp = fsockopen('api.yuai6.com', 80, $errno, $errstr, 30);
+        $fp = fsockopen('www.yuai6.com', 80, $errno, $errstr, 30);
         if ($fp) {
             $param = array(
                 'service' => 'user.info',
@@ -31,5 +31,10 @@ class homeControl extends baseControl {
             die('The host can not open');
         }
 
+    }
+
+    public function test() {
+        echo '<pre>';
+        print_r($_POST);
     }
 }
