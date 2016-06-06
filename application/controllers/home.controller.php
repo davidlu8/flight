@@ -7,12 +7,12 @@ class homeControl extends baseControl {
     public function index() {
         $fp = fsockopen('api.yuai6.com', 80, $errno, $errstr, 30);
         if ($fp) {
-            $paras = array(
+            $param = array(
                 'service' => 'user.info',
                 'id' => 100070,
                 'type' => 0,
             );
-            $data = http_build_query($paras);
+            $data = http_build_query($param);
             fputs($fp, 'POST /api.php HTTP/1.1\r\n');
             fputs($fp, 'Host: api.yuai.com\r\n');
             fputs($fp, 'Content-length: '.strlen($data).'\r\n');
