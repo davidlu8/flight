@@ -13,7 +13,7 @@ class homeControl extends baseControl {
                 'type' => 0,
             );
             $data = http_build_query($param);
-            fputs($fp, 'POST / HTTP/1.1\r\n');
+            fputs($fp, 'POST / HTTP/1.0\r\n');
             fputs($fp, 'Host: www.warmvoice.cn\r\n');
             fputs($fp, 'Content-type: application/x-www-form-urlencoded\r\n');
             fputs($fp, 'Content-length: '.strlen($data).'\r\n');
