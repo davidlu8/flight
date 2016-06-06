@@ -17,6 +17,8 @@ class tvControl extends baseControl {
         $ownerInfo = $userinfoDal->find($item['GIFTHISTORY_OWNER_ID']);
         $userInfo = $userinfoDal->find($item['GIFTHISTORY_USER_ID']);
         $gift = $gifthistoryDal->find($item['GIFTHISTORY_GIFT_ID']);
+        echo '<pre>';
+        print_r($gift);
 
         require APPPATH.'views/gift.php';
     }
