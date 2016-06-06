@@ -4,7 +4,7 @@ class uri {
     public $segments = array();
     function __construct() {
         $this->url = substr($_SERVER['REQUEST_URI'], 1);
-        $this->segments = explode('/', $this->url);
+        $this->segments = preg_grep('/[^\s]+/', explode('/', $this->url));
         echo '<pre>';
         print_r($this->segments);
         if (!isset($this->segments[0]) || empty($this->segments[0])) {
