@@ -12,6 +12,9 @@ class application {
             Fl::logger()->debug(" File : ", json_encode($_FILES));
         }
 
+        $controlClassFile = APPPATH."controllers/".base::control().".controller.php";
+        echo $controlClassFile;
+
 
     }
 }
