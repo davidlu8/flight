@@ -5,6 +5,6 @@ class homeControl extends baseControl {
     }
 
     public function index() {
-        echo 'ddd';
+
     }
 }
