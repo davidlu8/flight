@@ -56,4 +56,14 @@ class base {
     public static function method() {
         return FL::uri()->segments[1];
     }
+
+    public static function paras() {
+        $paras = array();
+        if (count(FL::uri()->segments) > 2) {
+            for($i = 2; $i < count(FL::uri()->segments); $i++) {
+                $paras[] = FL::uri()->item($i);
+            }
+        }
+        return $paras;
+    }
 }
