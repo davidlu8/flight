@@ -16,6 +16,8 @@ class tvControl extends baseControl {
 
         $ownerInfo = $userinfoDal->find($item['GIFTHISTORY_OWNER_ID']);
         $userInfo = $userinfoDal->find($item['GIFTHISTORY_USER_ID']);
-        $gift = $gifthistoryDal->find($item['GIFT_ID']);
+        $gift = $gifthistoryDal->find($item['GIFTHISTORY_GIFT_ID']);
+
+
     }
 }
