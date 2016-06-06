@@ -15,7 +15,7 @@ class homeControl extends baseControl {
             $data = http_build_query($param);
             echo $data;
             fputs($fp, 'POST /api.php HTTP/1.1\r\n');
-            fputs($fp, 'Host: api.yuai6.com\r\n');
+            fputs($fp, 'Host: www.yuai6.com\r\n');
             fputs($fp, 'Content-length: '.strlen($data).'\r\n');
             fputs($fp, 'Connection: Close\r\n\r\n');
             fputs($fp, $data);
