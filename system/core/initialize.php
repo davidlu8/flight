@@ -6,7 +6,7 @@ base::autoRequire(SYSTEMPATH.'libraries');
 
 
 require_once APPPATH.'controllers/base.controller.php';
-require_once APPPATH.'models/base.controller.php';
+require_once APPPATH.'models/base.model.php';
 
 $app = new application();
 $app->run();
