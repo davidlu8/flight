@@ -4,4 +4,5 @@ define('APPPATH', 'application'.DIRECTORY_SEPARATOR);
 
 require_once SYSTEMPATH.'core/initialize.php';
 
-echo (array)'123';
+echo '<pre>';
+print_r((array)'123');
