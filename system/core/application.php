@@ -30,6 +30,7 @@ class application {
 
         try {
             $controlClass = $this->control . "Control";
+            echo $controlClassFile;
             include_once($controlClassFile);
             $controlItem = new $controlClass();
 
