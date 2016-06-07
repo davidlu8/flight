@@ -15,6 +15,6 @@
 <div class="wrapper">
     <?php echo date('H:i', strtotime($item['GIFTHISTORY_ADD_TIME'])) ?>
     <a href="userID:<?php echo $ownerInfo['USERINFO_USER_ID'] ?>" class="text-danger"><?php echo $ownerInfo['USERINFO_NICKNAME'] ?></a>送给了<a href="userID:<?php echo $userInfo['USERINFO_USER_ID'] ?>" class="text-danger"><?php echo $userInfo['USERINFO_NICKNAME'] ?></a><?php echo $item['GIFTHISTORY_GIFT_AMOUNT'] ?>个<span class="text-success">[<?php echo $gift['GIFT_NAME'] ?> <img src="<?php echo $gift['GIFT_IMAGE'] ?>" width="28" />]</span>,
-    掌声响起来...<a href="/page/tv.html" class="text-primary title-tv">我要上电视</a>
+    掌声响起来...<a href="/page/tv.html" class="text-default title-tv"><img src="/page/theme/images/tv.jpg" width="30"/> 我要上电视</a>
 </div>
 </html>
