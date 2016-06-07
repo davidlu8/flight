@@ -21,7 +21,7 @@ class homeControl extends baseControl {
             fputs($fp, "Connection: Close\r\n\r\n");
             fputs($fp, $data);
             $response = '';
-            while($row=fread($fp, 4096)){
+            while($row = fread($fp, 4096)){
                 $response .= $row;
             }
 
