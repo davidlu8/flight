@@ -36,4 +36,8 @@ class mallControl extends baseControl {
     public function item($id) {
         echo $id;
     }
+
+    public function exchange() {
+
+    }
 }
