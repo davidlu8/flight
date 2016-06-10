@@ -23,6 +23,7 @@ $(document).ready(function(){
             data: {commodity_id:id},
             dataType: "json",
             success: function(data) {
+                alert(data);
                 if (data.errCode == 0) {
 
                 } else {
