@@ -12,6 +12,12 @@
 </head>
 <body class="mall">
 <div class="item-wrapper">
+    <div class="row">
+        <div class="col-xs-6">
+            <img src="<?php echo $item['COMMODITY_IMAGE'] ?>"  width="40%" />
+        </div>
+        <div class="col-xs-6">.col-xs-6</div>
+    </div>
     <div class="imageFloat">
         <img src="<?php echo $item['COMMODITY_IMAGE'] ?>"  width="40%" />
     </div>
