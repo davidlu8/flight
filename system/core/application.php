@@ -38,6 +38,8 @@ class application {
 
             if (method_exists($controlItem, $this->method))
                 try {
+                    echo '<pre>';
+                    print_r($this->paras);
                     call_user_func(array($controlItem, $this->method), $this->paras);
                 } catch(Exception $e) {
                     Fl::logger()->error('error method', $e->getCode().'|'.$e->getMessage());
