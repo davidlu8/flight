@@ -19,7 +19,7 @@ class mallControl extends baseControl {
         $commodityDal = Load::model('commodity');
         $filterData = array(
             'order' => array(
-                'weight' => 'desc',
+                'COMMODITY_WEIGHT' => 'desc',
                 'COMMODITY_ID' => 'desc'
             )
         );
