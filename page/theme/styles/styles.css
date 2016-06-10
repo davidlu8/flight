@@ -123,5 +123,6 @@ ul.mall-listblock li {
     background: #FFF;
     float: left;
     margin-left: 1rem;
+    width: 45%;
     list-style: none;
 }
