@@ -32,4 +32,8 @@ class mallControl extends baseControl {
 
         FL::view('mall', $data);
     }
+
+    public function item($id) {
+        echo $id;
+    }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>积分商城</title>
@@ -27,7 +27,7 @@
         <div class="<?php echo $key % 2 == 0 ? 'left' : 'right' ?>">
             <div class="block">
                 <div class="imageBlock">
-                    <img src="<?php echo $item['COMMODITY_IMAGE'] ?>"  width="100%" />
+                    <a href="/mall/item/<?php echo $item['COMMODITY_ID'] ?>"/><img src="<?php echo $item['COMMODITY_IMAGE'] ?>"  width="100%" /></a>
                 </div>
                 <div class="name">
                     <?php echo $item['COMMODITY_NAME'] ?>
