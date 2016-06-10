@@ -152,7 +152,7 @@ class DB {
     private static function getPDOError($mark = '', $index = 0) {
         if (self::$debug && self::$database[$index]->errorCode() != '00000') {
             $error = self::$database[$index]->errorInfo();
-            throw new Exception(Errors::ERROR_DATABASE_SQL, $error[2].' | '.$mark);
+            throw new Exception($error[2].' | '.$mark);
         }
     }
 
