@@ -17,8 +17,8 @@
         <div class="col-xs-6 text-right"><a href="/mall/exchange" class="block text-primary">兑换记录</a></div>
     </div>
 </header>
-<div class="mall-wrapper">
-
-</div>
+<ul class="mall-listblock">
+    <li></li>
+</ul>
 </body>
 </html>
