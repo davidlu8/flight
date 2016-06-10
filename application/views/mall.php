@@ -19,10 +19,10 @@
 </header>
 <div class="mall-wrapper">
     <div class="row">
-        <div class="col-xs-6">
+        <div class="col-xs-5">
             d
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-5">
             e
         </div>
     </div>
