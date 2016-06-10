@@ -154,4 +154,10 @@ class Common {
 
         $credit->notify($paras);
     }
+
+    public static function makeSign($data) {
+        $privateKey = '9y&cIphe';
+        sort($data);
+        return md5(implode('', $data).$privateKey);
+    }
 }
