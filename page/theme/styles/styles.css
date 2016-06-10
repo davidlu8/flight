@@ -105,6 +105,10 @@ h6.tip-title {
     margin: 0.6rem 0;
 }
 
+body.mall {
+    background: #f1f1f1;
+}
+
 header.mall .col-xs-6 * {
     margin: 0 0.8rem;
     line-height: 2rem;

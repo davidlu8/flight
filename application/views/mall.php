@@ -10,8 +10,7 @@
     <script type="text/javascript" charset="utf-8" src="/packages/jquery/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="/page/theme/scripts/script.js"></script>
 </head>
-<body>
-</body>
+<body class="mall">
 <header class="mall">
     <div class="row">
         <div class="col-xs-6"><span>.col-xs-6</span></div>
@@ -19,6 +18,6 @@
     </div>
 </header>
 <div class="mall-wrapper">
-    <head
 </div>
+</body>
 </html>
