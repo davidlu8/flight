@@ -4,7 +4,7 @@ class input {
         echo magic_quotes_gpc() ? 1 : 0;
     }
 
-    public function item($index) {
+    public function get($name, $default = '') {
         if (isset($this->segments[$index])) {
             return $this->segments[$index];
         } else {
