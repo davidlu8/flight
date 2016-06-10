@@ -64,6 +64,12 @@ class mallControl extends baseControl {
             echo json_encode($data);
             exit;
         }
+        $data = array(
+            'errCode' => 1,
+            'errMsg' => 'ÕÊºÅ²»ÕýÈ·'
+        );
+        echo json_encode($data);
+        exit;
         $commodityID = FL::input()->post('commodity_id');
         echo $commodityID;
     }
