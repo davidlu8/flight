@@ -22,7 +22,7 @@
         <div class="col-xs-6">
             d
         </div>
-        <div class="col-xs-5">
+        <div class="col-xs-6">
             e
         </div>
     </div>
