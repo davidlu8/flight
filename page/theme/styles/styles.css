@@ -169,6 +169,7 @@ div.rowline div.block div.count {
     text-align: right;
     color: #666;
     font-size: 1.35rem;
+    line-height: 2rem;
 }
 
 div.clear {
