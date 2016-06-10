@@ -105,7 +105,6 @@ h6.tip-title {
     margin: 0.6rem 0;
 }
 
-header.mall .col-xs-6 {
-    margin: 0.5rem;
-
+header.mall .col-xs-6 * {
+    margin: 0 0.5rem;
 }
