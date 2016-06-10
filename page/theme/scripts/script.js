@@ -18,8 +18,8 @@ $(document).ready(function(){
     $('a[name=exchange]').click(function() {
         id = $(this).attr("value");
         $.ajax({
-            type: "POST",
-            url: "/mall/exchange",
+            url: '/mall/exchange',
+            type: "post",
             data: {commodity_id:id},
             dataType: "json",
             success: function(data) {
