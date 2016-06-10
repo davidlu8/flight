@@ -9,8 +9,9 @@ class mallControl extends baseControl {
         $timestamp = FL::input()->get('timestamp', 0);
         $sign = FL::input()->get('sign', 0);
 
-        $
-        exit;
+        if (Common::makeSign(array($id, $timestamp)) != $sign) {
+            exit('签名不正确');
+        }
 
         $userinfoDal = Load::model('userinfo');
         $gifthistoryDal = Load::model('gifthistory');
