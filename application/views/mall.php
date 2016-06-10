@@ -31,6 +31,9 @@
                 </div>
                 <div class="price">
                     <?php echo $item['COMMODITY_NAME'] ?>
+                    <div class="count">
+
+                    </div>
                 </div>
             </div>
         </div>
