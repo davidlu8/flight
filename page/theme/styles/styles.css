@@ -119,6 +119,8 @@ header.mall .col-xs-6 .block {
     margin: 0 1rem;
 }
 
-ul.mall-listblock {
-    margin: 0 1rem;
+ul.mall-listblock li {
+    background: #FFF;
+    float: left;
+    margin-left: 1rem;
 }
