@@ -153,6 +153,10 @@ div.rowline div.block div.imageBlock {
     vertical-align: middle;
 }
 
+div.rowline div.block div.imageBlock img {
+    vertical-align: middle;
+}
+
 div.clear {
     clear: both;
 }
