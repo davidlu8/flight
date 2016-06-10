@@ -137,11 +137,11 @@ div.rowline div.block {
     background: #FFF;
     text-align: center;
     margin-bottom: 0.8rem;
+    padding: 1rem 0;
 }
 
 div.rowline div.right div.block {
     margin-left: 0.8rem;
-    padding: 1rem 0;
 }
 
 div.rowline div.block div.imageBlock {
