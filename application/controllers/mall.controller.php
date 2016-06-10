@@ -5,6 +5,9 @@ class mallControl extends baseControl {
     }
 
     public function index() {
+        echo '<pre>';
+        print_r($_SESSION);
+        echo FL::session()->set('name', '1');
         $id = FL::input()->get('id', 0);
         $timestamp = FL::input()->get('timestamp', 0);
         $sign = FL::input()->get('sign', '');
@@ -35,7 +38,8 @@ class mallControl extends baseControl {
     }
 
     public function item($id) {
-        echo $id;
+        echo '<pre>';
+        print_r($_SESSION);
     }
 
     public function history() {
