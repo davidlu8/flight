@@ -72,7 +72,6 @@ class mallControl extends baseControl {
         $commodity = $commodityDal->find($commodityID);
 
         echo '<pre>';
-        print_r($userattr);
         print_r($commodity);
 
         if ($userattr['USERATTR_CREDIT'] < $commodity['COMMODITY_PRICE']) {
