@@ -22,15 +22,8 @@ $(document).ready(function(){
             url: "/mall/exchange",
             data: {commodity_id:id},
             dataType: "json",
-            success: function(data){
-                $('#resText').empty();   //清空resText里面的所有内容
-                var html = '';
-                $.each(data, function(commentIndex, comment){
-                    html += '<div class="comment"><h6>' + comment['username']
-                        + ':</h6><p class="para"' + comment['content']
-                        + '</p></div>';
-                });
-                $('#resText').html(html);
+            success: function(data) {
+                alert('dd');
             }
         });
     });
