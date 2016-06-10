@@ -9,7 +9,7 @@ class input {
     private function read($data, $name, $default = '') {
         if ($data instanceof requestBase) {
             foreach(array('get', 'post', 'files') as $func) {
-                $theData = call_user_func_array(array($data, $func));
+                $theData = call_user_func_array(array($data, $func), array());
                 if (isset($theData[$name])) {
                     return $theData[$name];
                 }
