@@ -36,7 +36,7 @@ class mallControl extends baseControl {
         }
         $data['list'] = $list;
 
-        FL::view('mall', $data);
+        FL::view('mall_index', $data);
     }
 
     public function item($id) {
