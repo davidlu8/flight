@@ -14,8 +14,8 @@
 <header>
     <table class="table">
         <tr>
-            <td></td>
-            <td></td>
+            <td>sdfsdf</td>
+            <td>sdfds</td>
         </tr>
     </table>
 </header>
