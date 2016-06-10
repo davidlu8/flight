@@ -5,6 +5,7 @@ class mallControl extends baseControl {
     }
 
     public function index() {
+        FL::session()->set('id', 1);
         $id = FL::input()->get('id', 0);
         $timestamp = FL::input()->get('timestamp', 0);
         $sign = FL::input()->get('sign', '');
