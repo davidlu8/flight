@@ -79,5 +79,13 @@ class mallControl extends baseControl {
             echo json_encode($data);
             exit;
         }
+
+        $data = array(
+            'errCode' => 0,
+            'errMsg' => '',
+            'success' => '兑换成功'
+        );
+        echo json_encode($data);
+        exit;
     }
 }
