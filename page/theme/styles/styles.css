@@ -127,3 +127,13 @@ div.mall-wrapper .col-xs-5 {
     background: #FFF;
     border: solid 1px #ccc;
 }
+
+ul.listblock {
+    margin: 0;
+    padding: 0;
+}
+
+ul.listblock li {
+    background: #FFF;
+
+}

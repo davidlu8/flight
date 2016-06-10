@@ -19,7 +19,8 @@
 </header>
 <div class="mall-wrapper">
     <ul class="listblock">
-        <li></li>
+        <li>sdfsdf</li>
+        <li class="right">sdfsdf</li>
     </ul>
 </div>
 </body>
