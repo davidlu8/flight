@@ -13,6 +13,7 @@ class mallControl extends baseControl {
             //exit('签名不正确');
         }
 
+
         $userattrDal = Load::model('userattr');
         $data['userattr'] = $userattrDal->find($id);
 
@@ -35,6 +36,10 @@ class mallControl extends baseControl {
 
     public function item($id) {
         echo $id;
+    }
+
+    public function history() {
+
     }
 
     public function exchange() {
