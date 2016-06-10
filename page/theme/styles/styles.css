@@ -150,6 +150,7 @@ div.rowline div.block div.imageBlock {
     width: 85%;
     height: 10rem;
     margin: 0 auto;
+    vertical-align: middle;
 }
 
 div.clear {
