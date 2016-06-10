@@ -26,5 +26,11 @@
         <span class="text-danger"> <?php echo number_format($item['COMMODITY_PRICE'], 0) ?>积分</span>
     </div>
 </div>
+<div class="desc-title">
+    物品描述
+</div>
+<div class="desc-wrapper">
+    <?php echo $item['COMMODITY_DESC'] ?>
+</div>
 </body>
 </html>

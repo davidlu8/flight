@@ -176,7 +176,7 @@ div.clear {
     clear: both;
 }
 
-div.head-wrapper {
+div.head-wrapper, div.desc-wrapper {
     margin: 0;
     padding: 0;
     background: #FFF;
