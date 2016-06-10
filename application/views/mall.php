@@ -17,30 +17,5 @@
         <div class="col-xs-6 text-right"><a href="/mall/exchange" class="block text-primary">兑换记录</a></div>
     </div>
 </header>
-<div class="mall-wrapper">
-    <?php foreach($list as $items): ?>
-    <div class="rowline">
-        <?php foreach($items as $key => $item): ?>
-        <div class="<?php echo $key % 2 == 0 ? 'left' : 'right' ?>">
-            <div class="block">
-                <div class="imageBlock">
-                    <img src="<?php echo $item['COMMODITY_IMAGE'] ?>"  width="100%" />
-                </div>
-                <div class="name">
-                    <?php echo $item['COMMODITY_NAME'] ?>
-                </div>
-                <div class="price">
-                    <span class="text-warning"><?php echo $item['COMMODITY_PRICE'] ?>积分</span>
-                    <div class="count">
-                        <span class="text-disable"><?php echo $item['COMMODITY_COUNT'] ?></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <?php endforeach ?>
-    </div>
-    <div class="clear"></div>
-    <?php endforeach ?>
-</div>
 </body>
 </html>
