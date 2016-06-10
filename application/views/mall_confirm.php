@@ -28,6 +28,7 @@
     <?php if ($item['COMMODITY_TYPE'] == 0): ?>
     <input type="text" name="ali_account" class="login-field" value="" placeholder="输入支付宝账号" size="24" /><br/>
     <input type="text" name="ali_name" class="login-field" value="" placeholder="支付宝所有者真实姓名" size="24" /><br/>
+        不填写真实姓名可能造成无法汇款
     <?php endif ?>
 </div>
 <div class="desc-wrapper">

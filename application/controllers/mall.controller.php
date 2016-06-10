@@ -91,6 +91,9 @@ class mallControl extends baseControl {
             exit;
         }
 
+        if ($commodity['COMMODITY_TYPE'] == 0) {
+
+        }
 
 
         $data = array(
