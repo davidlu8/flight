@@ -123,4 +123,5 @@ ul.mall-listblock li {
     background: #FFF;
     float: left;
     margin-left: 1rem;
+    list-style: none;
 }
