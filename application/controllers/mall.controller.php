@@ -14,7 +14,7 @@ class mallControl extends baseControl {
             $sign = FL::input()->get('sign', '');
 
             if (Common::makeSign(array($id, $timestamp)) != $sign) {
-                //exit('Ç©Ãû²»ÕıÈ·');
+                //exit('ç­¾åä¸æ­£ç¡®');
             }
             FL::session()->set('id', $id);
         }
@@ -59,13 +59,13 @@ class mallControl extends baseControl {
         if ($id = FL::session()->get('id', 0)) {
             $data = array(
                 'errCode' => 1,
-                'errMsg' => 'ÕÊºÅ²»ÕıÈ·'
+                'errMsg' => 'å¸å·ä¸æ­£ç¡®'
             );
             echo json_encode($data);
         }
         $data = array(
             'errCode' => 1,
-            'errMsg' => 'ÕÊºÅ²»ÕıÈ·'
+            'errMsg' => 'å¸å·ä¸æ­£ç¡®'
         );
         echo '<pre>';
         print_r($data);
