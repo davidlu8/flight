@@ -64,7 +64,7 @@ class mallControl extends baseControl {
             echo json_encode($data);
             exit;
         }
-        $commodityID = FL::input()->get('commodity_id', 0);
+        $commodityID = FL::input()->post('commodity_id', 0);
 
         $userattrDal = Load::model('userattr');
         $userattr = $userattrDal->find($id);
