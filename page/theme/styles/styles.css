@@ -119,7 +119,9 @@ header.mall .col-xs-6 .block {
     margin: 0 1rem;
 }
 
-ul.mall-listblock li {
+table.mall-table {
+    width: 100%;
+    margin: 1rem 0;
     background: #FFF;
     float: left;
     margin-left: 0.5rem;
