@@ -67,6 +67,8 @@ class mallControl extends baseControl {
             'errCode' => 1,
             'errMsg' => 'ÕÊºÅ²»ÕýÈ·'
         );
+        echo '<pre>';
+        print_r($data);
         echo json_encode($data);
     }
 }
