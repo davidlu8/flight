@@ -187,9 +187,13 @@ div.head-wrapper div.imageBlock {
     border-bottom: solid 1px #ccc;
 }
 
-div.head-wrapper div.name, div.head-wrapper div.price {
+div.head-wrapper div.name  {
     padding: 0 1rem;
     line-height: 3.5rem;
+}
+
+div.head-wrapper div.price {
+    padding: 0 1rem;
 }
 
 div.head-wrapper div.price div.exchange {
