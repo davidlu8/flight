@@ -5,7 +5,7 @@ class mallControl extends baseControl {
     }
 
     public function index() {
-        echo FL::input()->get('id');
+        echo FL::input()->all('id');
         echo '<pre>';
         print_r($_GET);
         exit;
