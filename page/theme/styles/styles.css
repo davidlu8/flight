@@ -123,11 +123,6 @@ div.mall-wrapper {
     padding: 0.5rem 0.5rem;
 }
 
-div.mall-wrapper .col-xs-5 {
-    background: #FFF;
-    border: solid 1px #ccc;
-}
-
 div.rowline {
     width: 100%;
 }
@@ -144,4 +139,9 @@ div.rowline div.right {
 
 div.rowline div.block {
     background: #FFF;
+    text-align: center;
+}
+
+div.rowline div.right div.block {
+    margin-left: 0.5rem;
 }
