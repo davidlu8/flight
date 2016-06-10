@@ -20,13 +20,6 @@
     </table>
 </header>
 
-<!--
-<header class="mall">
-    <div class="row">
-        <div class="col-xs-6"><span class="block">积分余额：<span class="text-warning"><?php echo $userattr['USERATTR_CREDIT'] ?></span></span></div>
-        <div class="col-xs-6 text-right"><a href="/mall/exchange" class="block text-primary">兑换记录</a></div>
-    </div>
-</header>
 <div class="mall-wrapper">
     <?php foreach($list as $items): ?>
     <div class="rowline">
@@ -52,6 +45,5 @@
     <div class="clear"></div>
     <?php endforeach ?>
 </div>
--->
 </body>
 </html>
