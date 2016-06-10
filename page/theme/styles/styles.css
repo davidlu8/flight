@@ -128,12 +128,12 @@ div.rowline {
 }
 
 div.rowline div.left {
-    width: 49%;
+    width: 50%;
     float: left;
 }
 
 div.rowline div.right {
-    width: 49%;
+    width: 50%;
     float: right;
 }
 
@@ -143,6 +143,7 @@ div.rowline div.block {
 }
 
 div.rowline div.right div.block {
+    margin-left: 0.8rem;
 }
 
 div.rowline div.block div.imageBlock {
