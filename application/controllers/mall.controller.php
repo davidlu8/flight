@@ -23,7 +23,14 @@ class mallControl extends baseControl {
                 'COMMODITY_ID' => 'desc'
             )
         );
-        $data['list'] = $commodityDal->items($filterData);
+        $list = array();
+        foreach($commodityDal->items($filterData) as $key => $item) {
+            $newKey = intval($key / 2);
+            $list[$newKey][] = $item;
+        }
+        echo '<pre>';
+        print_r($list);
+        $data['list'] = $list;
 
         FL::view('mall', $data);
     }

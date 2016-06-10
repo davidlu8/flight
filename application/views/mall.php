@@ -21,7 +21,7 @@
     <div class="rowline">
         <div class="left">
             <div class="block">
-                sdfsdf
+                <img src=""
             </div>
         </div>
         <div class="right">
