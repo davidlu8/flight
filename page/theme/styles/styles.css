@@ -152,6 +152,7 @@ div.rowline div.block div.imageBlock {
 
 div.rowline div.block div.name {
     width: 85%;
+    margin: 0 auto;
     color: #000;
     text-align: left;
 }
