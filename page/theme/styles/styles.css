@@ -212,6 +212,7 @@ span.gray {
 
 div.desc-title {
     margin: 2rem 1rem 0.5rem;
+    color: gray;
 }
 
 div.desc-wrapper {
