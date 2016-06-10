@@ -203,3 +203,7 @@ div.head-wrapper div.price div.exchange {
 span.text-small {
     font-size: 90%;
 }
+
+span.gray {
+    color: gray;
+}
