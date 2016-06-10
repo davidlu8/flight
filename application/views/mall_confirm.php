@@ -16,13 +16,11 @@
         <div class="col-xs-6">
             <img src="<?php echo $item['COMMODITY_IMAGE'] ?>"  width="40%" />
         </div>
-        <div class="col-xs-6">.col-xs-6</div>
+        <div class="col-xs-6">
+            <?php echo $item['COMMODITY_NAME'] ?><br/>
+            话费积分：<span class="text-danger"><?php echo number_format($item['COMMODITY_PRICE'], 0) ?></span>
+        </div>
     </div>
-    <div class="imageFloat">
-        <img src="<?php echo $item['COMMODITY_IMAGE'] ?>"  width="40%" />
-    </div>
-    <?php echo $item['COMMODITY_NAME'] ?><br/>
-    话费积分：<span class="text-danger"><?php echo number_format($item['COMMODITY_PRICE'], 0) ?></span>
 </div>
 <div class="desc-title">
     物品描述
