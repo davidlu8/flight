@@ -56,7 +56,7 @@ class mallControl extends baseControl {
     }
 
     public function exchange() {
-        if (!$id = FL::session()->get('id', 0)) {
+        if ($id = FL::session()->get('id', 0)) {
             $data = array(
                 'errCode' => 1,
                 'errMsg' => 'ีสบลฒปีýศท'
