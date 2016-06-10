@@ -45,6 +45,10 @@ class mallControl extends baseControl {
             exit;
         }
 
+        $commodityDal = Load::model('commodity');
+        $data['item'] = $commodityDal->find($id);
+
+        FL::view('mall_item', $data);
     }
 
     public function history() {
