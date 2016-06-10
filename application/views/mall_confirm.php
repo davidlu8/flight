@@ -31,7 +31,7 @@
     <?php endif ?>
 </div>
 <div class="desc-wrapper">
-    <button class="btn btn-large btn-block btn-danger" name="exchange">确认兑换</button>
+    <a class="btn btn-large btn-block btn-danger" name="exchange">确认兑换</a>
 </div>
 </form>
 </body>
