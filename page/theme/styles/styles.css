@@ -228,3 +228,7 @@ div.item-wrapper {
 div.imageFloat {
     float: left;
 }
+
+div.desc-title input {
+    width: 100%;
+}
