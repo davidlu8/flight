@@ -118,3 +118,8 @@ header.mall {
 header.mall .col-xs-6 .block {
     margin: 0 1rem;
 }
+
+div.mall-wrapper {
+    background: #FFF;
+    margin: 0 1rem;
+}
