@@ -175,3 +175,9 @@ div.rowline div.block div.count {
 div.clear {
     clear: both;
 }
+
+div.item-wrapper {
+    margin: 0;
+    padding: 0;
+    background: #FFF;
+}
