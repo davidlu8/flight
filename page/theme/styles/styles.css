@@ -109,6 +109,12 @@ body.mall {
     background: #f1f1f1;
 }
 
+header.table {
+    background: #FFF;
+    line-height: 3.5rem;
+    border-bottom: solid 1px #ccc;
+}
+
 header.mall {
     background: #FFF;
     line-height: 3.5rem;
