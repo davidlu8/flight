@@ -189,6 +189,7 @@ div.head-wrapper div.imageBlock {
 
 div.head-wrapper div.name  {
     padding: 0 1rem;
+    margin: 0.5rem 0 0;
     line-height: 3.5rem;
 }
 
