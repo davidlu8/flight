@@ -18,14 +18,9 @@
     </div>
 </header>
 <div class="mall-wrapper">
-    <div class="row">
-        <div class="col-xs-5">
-            d
-        </div>
-        <div class="col-xs-5">
-            e
-        </div>
-    </div>
+    <ul class="listblock">
+        <li></li>
+    </ul>
 </div>
 </body>
 </html>
