@@ -20,7 +20,7 @@
     </div>
     <div class="price">
         <div class="exchange">
-            <a href="javascript:void(0)" class="btn btn-sm btn-block btn-danger">兑换</a>
+            <a href="javascript:void(0)" class="btn btn-sm btn-block btn-danger" name="exchange" value="<?php echo $item['COMMODITY_ID'] ?>">兑换</a>
         </div>
         <span class="text-small gray"> <?php echo $item['COMMODITY_COUNT'] ?>人已兑换</span><br/>
         <span class="text-danger"> <?php echo number_format($item['COMMODITY_PRICE'], 0) ?>积分</span>
