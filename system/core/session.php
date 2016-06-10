@@ -2,7 +2,9 @@
 class session {
     private $sessionData;
     function __construct() {
-        session_start();
+        if (!isset($_SESSION)) {
+            session_start();
+        }
         $this->sessionData = $_SESSION;
     }
 
