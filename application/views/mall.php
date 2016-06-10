@@ -14,8 +14,8 @@
 </body>
 <header>
     <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12</div>
-        <div class="col-xs-6 col-md-4">.col-xs-6</div>
+        <div class="col-xs-6">.col-xs-6</div>
+        <div class="col-xs-6">.col-xs-6</div>
     </div>
 </header>
 <div class="mall-wrapper">
