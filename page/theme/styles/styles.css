@@ -115,6 +115,6 @@ header.mall {
     border-bottom: solid 1px #ccc;
 }
 
-header.mall .col-xs-6 span.block {
+header.mall .col-xs-6 .block {
     margin: 0 1rem;
 }
