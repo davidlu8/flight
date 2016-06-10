@@ -210,6 +210,10 @@ span.gray {
     color: gray;
 }
 
+div.desc-title {
+    margin: 2rem 1rem 0.5rem;
+}
+
 div.desc-wrapper {
     padding: 2rem 1rem 2rem;
     background: #FFF;
