@@ -19,8 +19,8 @@
 </header>
 <table class="mall-table" cellpadding="5" cellspacing="10" >
     <tr>
-        <td></td>
-        <td></td>
+        <td>sdfsd</td>
+        <td>eeee</td>
     </tr>
 </table>
 </body>
