@@ -11,9 +11,13 @@
     <script type="text/javascript" charset="utf-8" src="/page/theme/scripts/script.js"></script>
 </head>
 <body class="mall">
-    <div class="row">
-        <div class="col-xs-6">eee</div>
-        <div class="col-xs-6 text-right">ddd</div>
-    </div>
+<header>
+    <table class="table">
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</header>
 </body>
 </html>
