@@ -24,21 +24,21 @@ class input {
     }
 
     public function get($name, $default = '') {
-        $this->read($this->request->get(), $name, $default);
+        return $this->read($this->request->get(), $name, $default);
     }
 
     public function post($name, $default = '') {
-        $this->read($this->request->post(), $name, $default);
+        return $this->read($this->request->post(), $name, $default);
 
     }
 
     public function file($name, $default = '') {
-        $this->read($this->request->files(), $name, $default);
+        return $this->read($this->request->files(), $name, $default);
 
     }
 
     public function all($name, $default = '') {
-        $this->read($this->request, $name, $default);
+        return $this->read($this->request, $name, $default);
     }
 }
 
