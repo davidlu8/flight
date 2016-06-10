@@ -12,8 +12,13 @@
 </head>
 <body>
 </body>
+<header>
+    <div class="row">
+        <div class="col-md-8">.col-md-8</div>
+        <div class="col-md-4">.col-md-4</div>
+    </div>
+</header>
 <div class="mall-wrapper">
-    <?php echo '<pre>';
-    print_r($userattr); ?>
+    <head
 </div>
 </html>
