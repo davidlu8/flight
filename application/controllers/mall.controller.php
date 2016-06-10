@@ -13,6 +13,9 @@ class mallControl extends baseControl {
             exit('签名不正确');
         }
 
+        $userattrDal = Load::model('userattr');
+        $userattr = $userattrDal->find($id);
+
         $userinfoDal = Load::model('userinfo');
         $gifthistoryDal = Load::model('gifthistory');
         $giftDal = Load::model('gift');
