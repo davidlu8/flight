@@ -157,6 +157,12 @@ div.rowline div.block div.name {
     text-align: left;
 }
 
+div.rowline div.block div.price {
+    width: 85%;
+    margin: 0 auto;
+    text-align: left;
+}
+
 div.clear {
     clear: both;
 }
