@@ -49,7 +49,7 @@ class BaseModel {
 
     function find($id) {
         if (!is_array($id)) {
-            if (is_integer($id)) {
+            if (is_numeric($id)) {
                 $filterData = array(
                     'where' => sprintf("`%s` = '%s'", $this->primaryKey, $id),
                 );
