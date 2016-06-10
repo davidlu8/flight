@@ -10,7 +10,7 @@ class mallControl extends baseControl {
         $sign = FL::input()->get('sign', '');
 
         if (Common::makeSign(array($id, $timestamp)) != $sign) {
-            exit('签名不正确');
+            //exit('签名不正确');
         }
 
         $userattrDal = Load::model('userattr');
