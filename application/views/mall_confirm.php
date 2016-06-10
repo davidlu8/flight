@@ -15,17 +15,8 @@
     <div class="imageFloat">
         <img src="<?php echo $item['COMMODITY_IMAGE'] ?>"  width="40%" />
     </div>
-    <div class="name">
-        <?php echo $item['COMMODITY_NAME'] ?><br/>
-        话费积分：<span class="text-danger"><?php echo number_format($item['COMMODITY_PRICE'], 0) ?></span>
-    </div>
-    <div class="price">
-        <div class="exchange">
-            <a href="javascript:void(0)" class="btn btn-sm btn-block btn-danger" name="exchange" value="<?php echo $item['COMMODITY_ID'] ?>">兑换</a>
-        </div>
-        <span class="text-small gray"> <?php echo $item['COMMODITY_COUNT'] ?>人已兑换</span><br/>
-        <span class="text-danger"> <?php echo number_format($item['COMMODITY_PRICE'], 0) ?>积分</span>
-    </div>
+    <?php echo $item['COMMODITY_NAME'] ?><br/>
+    话费积分：<span class="text-danger"><?php echo number_format($item['COMMODITY_PRICE'], 0) ?></span>
 </div>
 <div class="desc-title">
     物品描述
