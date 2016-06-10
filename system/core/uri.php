@@ -9,9 +9,6 @@ class uri {
         $urlInfo = parse_url($this->url);
         $this->path = $urlInfo['path'];
         $this->query = $urlInfo['query'];
-
-        echo '<pre>';
-        print_r(parse_url($this->url));
         $this->segments = preg_grep('/[\w]+/', explode('/', $this->path));
         if (!isset($this->segments[0]) || empty($this->segments[0])) {
             $this->segments[0] = 'home';
