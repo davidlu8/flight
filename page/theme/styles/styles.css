@@ -120,7 +120,7 @@ header.mall .col-xs-6 .block {
 }
 
 div.mall-wrapper {
-    padding: 0.5rem 0.5rem;
+    padding: 1rem;
 }
 
 div.rowline {
@@ -143,5 +143,5 @@ div.rowline div.block {
 }
 
 div.rowline div.right div.block {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
 }
