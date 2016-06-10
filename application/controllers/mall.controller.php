@@ -7,7 +7,7 @@ class mallControl extends baseControl {
     public function index() {
         $id = FL::input()->get('id', 0);
         $timestamp = FL::input()->get('timestamp', 0);
-        $sign = FL::input()->get('sign', 0);
+        $sign = FL::input()->get('sign', '');
 
         if (Common::makeSign(array($id, $timestamp)) != $sign) {
             exit('签名不正确');
