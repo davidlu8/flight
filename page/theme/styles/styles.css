@@ -125,6 +125,6 @@ table.mall-table {
 }
 
 table.mall-table td {
-    margin: 0 0 1rem 0;
+    margin: 0 1rem;
     background: #FFF;
 }
