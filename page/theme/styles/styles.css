@@ -122,3 +122,8 @@ header.mall .col-xs-6 .block {
 div.mall-wrapper {
     margin: 0 1rem;
 }
+
+div.mall-wrapper .col-xs-6 {
+    background: #00F;
+    border: solid 1px #ccc;
+}
