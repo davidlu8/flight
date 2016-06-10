@@ -71,9 +71,10 @@ class mallControl extends baseControl {
         $commodityDal = Load::model('commodity');
         $commodity = $commodityDal->find($commodityID);
 
+        echo '<pre>';
+        print_r($userattr);
+        print_r($commodity);
         if ($userattr['USERATTR_CREDIT'] < $commodity['COMMODITY_PRICE']) {
-            echo '<pre>';
-            print_r($userattr);
             $data = array(
                 'errCode' => 1,
                 'errMsg' => '你的积分不足'
