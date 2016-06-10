@@ -68,7 +68,16 @@ class mallControl extends baseControl {
 
         $userattrDal = Load::model('userattr');
         $userattr = $userattrDal->find($id);
+        $commodityDal = Load::model('commodity');
+        $commodity = $commodityDal->find($commodityID);
 
-        if ()
+        if ($userattr['USERATTR_CREDIT'] < $commodity['COMMODITY_PRICE']) {
+            $data = array(
+                'errCode' => 1,
+                'errMsg' => '你的积分不足'
+            );
+            echo json_encode($data);
+            exit;
+        }
     }
 }
