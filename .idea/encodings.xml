@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/application/controllers/mall.controller.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/application/views/gift.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/views/mall_confirm.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/application/views/mall_index.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/application/views/mall_item.php" charset="UTF-8" />
   </component>
