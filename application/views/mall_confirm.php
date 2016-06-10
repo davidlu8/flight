@@ -12,7 +12,7 @@
 </head>
 <body class="mall">
 <div class="item-wrapper">
-    <div class="imageBlock">
+    <div class="imageFloat">
         <img src="<?php echo $item['COMMODITY_IMAGE'] ?>"  width="40%" />
     </div>
     <div class="name">
