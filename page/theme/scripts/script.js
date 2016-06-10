@@ -14,6 +14,26 @@ $(document).ready(function(){
     if (anchor != '') {
         $('ul.tab').eq(anchor.substr(1)).show();
     }
+
+    $('a[name=exchange]').click(function() {
+        id = $(this).attr("value");
+        $.ajax({
+            type: "POST",
+            url: "/mall/exchange",
+            data: {commodity_id:id},
+            dataType: "json",
+            success: function(data){
+                $('#resText').empty();   //清空resText里面的所有内容
+                var html = '';
+                $.each(data, function(commentIndex, comment){
+                    html += '<div class="comment"><h6>' + comment['username']
+                        + ':</h6><p class="para"' + comment['content']
+                        + '</p></div>';
+                });
+                $('#resText').html(html);
+            }
+        });
+    });
 });
 
 function request(name) {

@@ -56,6 +56,7 @@ class mallControl extends baseControl {
     }
 
     public function exchange() {
-
+        $commodityID = FL::input()->post('commodity_id');
+        echo $commodityID;
     }
 }
