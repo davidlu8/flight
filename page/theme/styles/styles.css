@@ -122,9 +122,8 @@ header.mall .col-xs-6 .block {
 table.mall-table {
     width: 100%;
     margin: 0.8rem 0;
-    background: #FFF;
-    float: left;
-    margin-left: 0.5rem;
-    width: 47%;
-    list-style: none;
+}
+
+table.mall-table td {
+    background: #FFF
 }
