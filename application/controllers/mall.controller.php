@@ -14,7 +14,7 @@ class mallControl extends baseControl {
         }
 
         $userattrDal = Load::model('userattr');
-        $userattr = $userattrDal->find($id);
+        $data['userattr'] = $userattrDal->find($id);
 
         $commodityDal = Load::model('commodity');
         $filterData = array(
@@ -23,8 +23,8 @@ class mallControl extends baseControl {
                 'COMMODITY_ID' => 'desc'
             )
         );
-        $listData = $commodityDal->items($filterData);
+        $data['list'] = $commodityDal->items($filterData);
 
-        require APPPATH.'views/mall.php';
+        FL::view('mall', $data);
     }
 }
