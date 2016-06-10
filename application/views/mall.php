@@ -32,7 +32,7 @@
                 <div class="price">
                     <span class="text-warning"> <?php echo $item['COMMODITY_PRICE'] ?>积分</span>
                     <div class="count">
-
+                        <?php echo $item['COMMODITY_COUNT'] ?>
                     </div>
                 </div>
             </div>
