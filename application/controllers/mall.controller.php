@@ -69,8 +69,5 @@ class mallControl extends baseControl {
             'errMsg' => 'ÕÊºÅ²»ÕýÈ·'
         );
         echo json_encode($data);
-        exit;
-        $commodityID = FL::input()->post('commodity_id');
-        echo $commodityID;
     }
 }
