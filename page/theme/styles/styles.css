@@ -119,14 +119,6 @@ header.mall .col-xs-6 .block {
     margin: 0 1rem;
 }
 
-table.mall-table {
-    width: 100%;
-    margin: 0.8rem 0;
-}
-
-table.mall-table td {
+div.mall-wrapper {
     margin: 0 1rem;
-    border: solid 1px #eee;
-    background: #FFF;
-
 }
