@@ -86,6 +86,5 @@ class mallControl extends baseControl {
             'success' => '兑换成功'
         );
         echo json_encode($data);
-        exit;
     }
 }
