@@ -3,6 +3,9 @@ class mallControl extends baseControl {
     public function __construct() {
         parent::__construct();
     }
+    public function set($id) {
+        FL::session()->set('id', $id);
+    }
 
     public function index() {
         if (!$id = FL::session()->get('id', 0)) {
