@@ -30,7 +30,7 @@
                     <?php echo $item['COMMODITY_NAME'] ?>
                 </div>
                 <div class="price">
-                    <?php echo $item['COMMODITY_NAME'] ?>
+                    <span class="text-warning"> <?php echo $item['COMMODITY_PRICE'] ?>积分</span>
                     <div class="count">
 
                     </div>
