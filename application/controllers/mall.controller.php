@@ -16,22 +16,15 @@ class mallControl extends baseControl {
         $userattrDal = Load::model('userattr');
         $userattr = $userattrDal->find($id);
 
-
-
-        $userinfoDal = Load::model('userinfo');
-        $gifthistoryDal = Load::model('gifthistory');
-        $giftDal = Load::model('gift');
+        $commodityDal = Load::model('commodity');
         $filterData = array(
             'order' => array(
-                'GIFTHISTORY_ADD_TIME' => 'desc',
+                'weight' => 'desc',
+                'COMMODITY_ID' => 'desc'
             )
         );
-        $item = $gifthistoryDal->item($filterData);
+        $listData = $commodityDal->items($filterData);
 
-        $ownerInfo = $userinfoDal->find($item['GIFTHISTORY_OWNER_ID']);
-        $userInfo = $userinfoDal->find($item['GIFTHISTORY_USER_ID']);
-        $gift = $giftDal->find($item['GIFTHISTORY_GIFT_ID']);
-
-        require APPPATH.'views/gift.php';
+        require APPPATH.'views/mall.php';
     }
 }
