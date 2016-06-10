@@ -16,8 +16,6 @@ class mallControl extends baseControl {
             FL::session()->set('id', $id);
         }
 
-
-
         $userattrDal = Load::model('userattr');
         $data['userattr'] = $userattrDal->find($id);
 
