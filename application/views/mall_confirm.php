@@ -18,7 +18,7 @@
         </div>
         <div class="col-xs-6">
             <?php echo $item['COMMODITY_NAME'] ?><br/>
-            话费积分：<span class="text-danger"><?php echo number_format($item['COMMODITY_PRICE'], 0) ?></span>
+            <span class="gray">话费积分：</span><span class="text-danger"><?php echo number_format($item['COMMODITY_PRICE'], 0) ?></span>
         </div>
     </div>
 </div>
