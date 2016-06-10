@@ -161,6 +161,8 @@ div.rowline div.block div.price {
     width: 85%;
     margin: 0 auto;
     text-align: left;
+    line-height: 2rem;
+
 }
 
 div.rowline div.block div.count {
