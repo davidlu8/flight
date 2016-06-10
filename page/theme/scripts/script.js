@@ -23,7 +23,11 @@ $(document).ready(function(){
             data: {commodity_id:id},
             dataType: "json",
             success: function(data) {
-                alert(data);
+                if (data.errCode == 0) {
+                    alert(data.success);
+                } else {
+                    alert(data.errMsg);
+                }
             }
         });
     });
