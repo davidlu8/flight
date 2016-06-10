@@ -24,11 +24,6 @@ $(document).ready(function(){
             dataType: "json",
             success: function(data) {
                 alert(data);
-                if (data.errCode == 0) {
-
-                } else {
-                    alert(data.errMsg);
-                }
             }
         });
     });
