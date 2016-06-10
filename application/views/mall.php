@@ -23,7 +23,7 @@
         <?php foreach($items as $key => $item): ?>
         <div class="<?php echo $key % 2 == 0 ? 'left' : 'right' ?>">
             <div class="block">
-                <img src="<?php echo $item['COMMODITY_IMAGE'] ?>"  width="100%" />
+                <img src="<?php echo $item['COMMODITY_IMAGE'] ?>"  width="80%" />
             </div>
         </div>
         <?php endforeach ?>
