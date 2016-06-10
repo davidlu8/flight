@@ -22,6 +22,7 @@
         </div>
     </div>
 </div>
+<form method="post" action="/mall/exchange">
 <div class="desc-title">
     <input type="text" name="alAccount" class="login-field" value="" placeholder="输入支付宝账号" size="50" /><br/>
     <input type="text" name="alAccount" class="span3" value="" placeholder="支付宝所有者真实姓名" size="50" /><br/>
@@ -29,5 +30,6 @@
 <div class="desc-wrapper">
     <button class="btn btn-large btn-block btn-danger">确认兑换</button>
 </div>
+</form>
 </body>
 </html>
