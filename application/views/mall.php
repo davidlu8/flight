@@ -17,9 +17,11 @@
         <div class="col-xs-6 text-right"><a href="/mall/exchange" class="block text-primary">兑换记录</a></div>
     </div>
 </header>
-<ul class="mall-listblock">
-    <li>sdfsdf</li>
-    <li>sdfsdf</li>
-</ul>
+<table class="mall-table" cellpadding="5" cellspacing="10" >
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
 </body>
 </html>
