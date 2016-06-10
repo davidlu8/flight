@@ -162,14 +162,13 @@ div.rowline div.block div.price {
     margin: 0 auto;
     text-align: left;
     line-height: 2rem;
-
 }
 
 div.rowline div.block div.count {
     float: right;
     text-align: right;
     color: #333;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 div.clear {
