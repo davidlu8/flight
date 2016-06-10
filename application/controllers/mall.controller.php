@@ -62,17 +62,10 @@ class mallControl extends baseControl {
                 'errMsg' => '帐号不正确'
             );
             echo json_encode($data);
-            exit;
         }
         $data = array(
             'errCode' => 1,
             'errMsg' => '帐号不正确'
-        );
-        echo json_encode($data);
-        exit;
-        $commodityID = FL::input()->post('commodity_id');
-        $data = array(
-            'commodityID' => $commodityID
         );
         echo json_encode($data);
     }
