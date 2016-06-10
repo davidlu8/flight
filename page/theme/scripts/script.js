@@ -20,7 +20,7 @@ $(document).ready(function(){
         $.ajax({
             url: '/mall/exchange',
             type: "post",
-            data: {commodity_id:id},
+            data: $("form").serialize(),
             dataType: "json",
             success: function(data) {
                 if (data.errCode == 0) {
