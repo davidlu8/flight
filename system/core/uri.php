@@ -7,8 +7,8 @@ class uri {
     function __construct() {
         $this->url = substr($_SERVER['REQUEST_URI'], 1);
         $urlInfo = parse_url($this->url);
-        $this->path = $urlInfo['path'];
-        $this->query = $urlInfo['query'];
+        $this->path = isset($urlInfo['path']) ? $urlInfo['path'] : '';
+        $this->query = isset($urlInfo['query']) ? $urlInfo['query'] : '';
         $this->segments = preg_grep('/[\w]+/', explode('/', $this->path));
         if (!isset($this->segments[0]) || empty($this->segments[0])) {
             $this->segments[0] = 'home';
