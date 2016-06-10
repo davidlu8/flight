@@ -74,6 +74,7 @@ class mallControl extends baseControl {
         echo '<pre>';
         print_r($userattr);
         print_r($commodity);
+
         if ($userattr['USERATTR_CREDIT'] < $commodity['COMMODITY_PRICE']) {
             $data = array(
                 'errCode' => 1,
