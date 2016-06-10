@@ -154,7 +154,10 @@ div.rowline div.block div.imageBlock {
 }
 
 div.rowline div.block div.imageBlock img {
-    vertical-align: middle;
+    position:static;
+    +position:relative;
+    top:-50%;
+    left:-50%;
 }
 
 div.clear {
