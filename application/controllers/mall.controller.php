@@ -39,16 +39,28 @@ class mallControl extends baseControl {
         FL::view('mall_index', $data);
     }
 
-    public function item($commodity_id) {
+    public function item($commodityID) {
         if (!$id = FL::session()->get('id', 0)) {
             header('Location: /mall', 302);
             exit;
         }
 
         $commodityDal = Load::model('commodity');
-        $data['item'] = $commodityDal->find($commodity_id);
+        $data['item'] = $commodityDal->find($commodityID);
 
         FL::view('mall_item', $data);
+    }
+
+    public function confirm($commodityID) {
+        if (!$id = FL::session()->get('id', 0)) {
+            header('Location: /mall', 302);
+            exit;
+        }
+
+        $commodityDal = Load::model('commodity');
+        $data['item'] = $commodityDal->find($commodityID);
+
+        FL::view('mall_confirm', $data);
     }
 
     public function history() {
@@ -78,6 +90,8 @@ class mallControl extends baseControl {
             echo json_encode($data);
             exit;
         }
+
+
 
         $data = array(
             'errCode' => 0,
