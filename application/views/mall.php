@@ -13,8 +13,8 @@
 <body class="mall">
 <header class="mall">
     <div class="row">
-        <div class="col-xs-6"><span>.col-xs-6</span></div>
-        <div class="col-xs-6 text-right"><span>.col-xs-6</span></div>
+        <div class="col-xs-6"><span class="block">积分余额：<span class="text-warning"><?php echo $userattr['USERATTR_CREDIT'] ?></span></span></div>
+        <div class="col-xs-6 text-right"><span class="block">.col-xs-6</span></div>
     </div>
 </header>
 <div class="mall-wrapper">
