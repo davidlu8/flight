@@ -56,6 +56,14 @@ class mallControl extends baseControl {
     }
 
     public function exchange() {
+        if (!$id = FL::session()->get('id', 0)) {
+            $data = array(
+                'errCode' => 1,
+                'errMsg' => 'ÕÊºÅ²»ÕýÈ·'
+            );
+            echo json_encode($data);
+            exit;
+        }
         $commodityID = FL::input()->post('commodity_id');
         $data = array(
             'commodityID' => $commodityID
