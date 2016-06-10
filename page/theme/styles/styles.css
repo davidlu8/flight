@@ -199,3 +199,7 @@ div.head-wrapper div.price {
 div.head-wrapper div.price div.exchange {
     float: right;
 }
+
+span.text-small {
+    font-size: 90%;
+}
