@@ -136,6 +136,7 @@ ul.listblock {
 ul.listblock li {
     background: #FFF;
     float: left;
+    list-style: none;
 
 }
 
