@@ -27,7 +27,7 @@
     <input type="text" name="alAccount" class="span3" value="" placeholder="支付宝所有者真实姓名" size="50" /><br/>
 </div>
 <div class="desc-wrapper">
-    <a href="#" class="btn btn-large btn-block btn-danger">确认兑换</a>
+    <button class="btn btn-large btn-block btn-danger">确认兑换</button>
 </div>
 </body>
 </html>
