@@ -112,6 +112,7 @@ body.mall {
 header.mall {
     background: #FFF;
     line-height: 3.5rem;
+    border-bottom: solid 1px #ccc;
 }
 
 header.mall .col-xs-6 * {
