@@ -23,7 +23,7 @@
             <a href="#" class="btn btn-sm btn-block btn-danger">兑换</a>
         </div>
         <span class="text-small gray"> <?php echo $item['COMMODITY_COUNT'] ?>人已兑换</span><br/>
-        <span class="text-warning"> <?php echo number_format($item['COMMODITY_PRICE'], 0) ?>积分</span>
+        <span class="text-success"> <?php echo number_format($item['COMMODITY_PRICE'], 0) ?>积分</span>
     </div>
 </div>
 </body>
