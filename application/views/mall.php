@@ -20,6 +20,7 @@
     </table>
 </header>
 
+<!--
 <header class="mall">
     <div class="row">
         <div class="col-xs-6"><span class="block">积分余额：<span class="text-warning"><?php echo $userattr['USERATTR_CREDIT'] ?></span></span></div>
@@ -51,5 +52,6 @@
     <div class="clear"></div>
     <?php endforeach ?>
 </div>
+-->
 </body>
 </html>
