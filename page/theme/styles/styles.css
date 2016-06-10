@@ -153,7 +153,9 @@ div.rowline div.block div.imageBlock {
     padding: 5rem 0;
 }
 
-div.rowline div.block div.imageBlock img {
+div.rowline div.block div.name {
+    color: #000;
+    text-align: left;
 }
 
 div.clear {
