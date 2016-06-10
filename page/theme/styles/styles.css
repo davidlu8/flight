@@ -137,3 +137,7 @@ ul.listblock li {
     background: #FFF;
 
 }
+
+ul.listblock li.right {
+    margin-left: 1rem;
+}
