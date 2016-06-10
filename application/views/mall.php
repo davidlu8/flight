@@ -17,11 +17,11 @@
         <div class="col-xs-6 text-right"><a href="/mall/exchange" class="block text-primary">兑换记录</a></div>
     </div>
 </header>
-<table class="mall-table">
-    <tr>
-        <td>sdfsd</td>
-        <td>eeee</td>
-    </tr>
-</table>
+<div class="mall-wrapper">
+    <div class="row">
+        <div class="col-xs-6"><span class="block">积分余额：<span class="text-warning"><?php echo $userattr['USERATTR_CREDIT'] ?></span></span></div>
+        <div class="col-xs-5 text-right"><a href="/mall/exchange" class="block text-primary">兑换记录</a></div>
+    </div>
+</div>
 </body>
 </html>
