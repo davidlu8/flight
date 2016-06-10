@@ -5,7 +5,7 @@ class mallControl extends baseControl {
     }
 
     public function index() {
-        $id =
+        FL::input()->get('ddd');
 
         $userinfoDal = Load::model('userinfo');
         $gifthistoryDal = Load::model('gifthistory');
