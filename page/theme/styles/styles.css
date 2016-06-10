@@ -163,6 +163,12 @@ div.rowline div.block div.price {
     text-align: left;
 }
 
+div.rowline div.block div.count {
+    float: right;
+    text-align: right;
+    color: #333;
+}
+
 div.clear {
     clear: both;
 }
