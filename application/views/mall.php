@@ -17,7 +17,7 @@
         <div class="col-xs-6 text-right"><a href="/mall/exchange" class="block text-primary">兑换记录</a></div>
     </div>
 </header>
-<table class="mall-table" cellpadding="5" cellspacing="5" >
+<table class="mall-table">
     <tr>
         <td>sdfsd</td>
         <td>eeee</td>
