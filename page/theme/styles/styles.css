@@ -192,4 +192,6 @@ div.head-wrapper div.name {
     line-height: 3.5rem;
 }
 
-div.head-wrapper div.price div.exchange
+div.head-wrapper div.price div.exchange {
+    float: right;
+}
