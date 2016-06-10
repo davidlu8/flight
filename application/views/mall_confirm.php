@@ -24,7 +24,7 @@
 </div>
 <form method="post" action="/mall/exchange">
 <div class="desc-title">
-    <input type="hidden" name="commodityID" value="<?php echo $item['COMMODITY_ID'] ?>" />
+    <input type="hidden" name="commodity_id" value="<?php echo $item['COMMODITY_ID'] ?>" />
     <?php if ($item['COMMODITY_TYPE'] == 0): ?>
     <input type="text" name="ali_account" class="login-field" value="" placeholder="输入支付宝账号" size="24" /><br/>
     <input type="text" name="ali_name" class="login-field" value="" placeholder="支付宝所有者真实姓名" size="24" /><br/>
