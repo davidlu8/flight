@@ -11,7 +11,7 @@
     <script type="text/javascript" charset="utf-8" src="/page/theme/scripts/script.js"></script>
 </head>
 <body class="mall">
-<div class="item-wrapper">
+<div class="head-wrapper">
     <div class="imageBlock">
         <img src="<?php echo $item['COMMODITY_IMAGE'] ?>"  width="100%" />
     </div>
