@@ -5,6 +5,8 @@ class mallControl extends baseControl {
     }
 
     public function index() {
+        $id =
+
         $userinfoDal = Load::model('userinfo');
         $gifthistoryDal = Load::model('gifthistory');
         $giftDal = Load::model('gift');
