@@ -186,3 +186,7 @@ div.head-wrapper .imageBlock {
     padding: 3.5rem 1rem;
     border-bottom: solid 1px #ccc;
 }
+
+div.head-wrapper .name {
+    padding: 0 1rem;
+}
