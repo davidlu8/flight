@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>电视滚动屏</title>
+    <title>积分商城</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="/packages/flatui/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="/packages/flatui/css/flat-ui-pro.min.css">
