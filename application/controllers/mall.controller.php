@@ -28,8 +28,6 @@ class mallControl extends baseControl {
             $newKey = intval($key / 2);
             $list[$newKey][] = $item;
         }
-        echo '<pre>';
-        print_r($list);
         $data['list'] = $list;
 
         FL::view('mall', $data);

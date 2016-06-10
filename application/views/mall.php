@@ -18,18 +18,17 @@
     </div>
 </header>
 <div class="mall-wrapper">
+    <?php foreach($list as $items): ?>
     <div class="rowline">
-        <div class="left">
+        <?php foreach($items as $key => $item): ?>
+        <div class="<?php echo $key % 2 == 0 ? 'left' : 'right' ?>">
             <div class="block">
-                <img src=""
+                <img src="<?php echo $item['COMMODITY_IMAGE'] ?>"  width="100%" />
             </div>
         </div>
-        <div class="right">
-            <div class="block">
-                eee
-            </div>
-        </div>
+        <?php endforeach ?>
     </div>
+    <?php endforeach ?>
 </div>
 </body>
 </html>
