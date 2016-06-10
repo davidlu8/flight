@@ -91,23 +91,29 @@ class mallControl extends baseControl {
             exit;
         }
 
-        if ($commodity['COMMODITY_TYPE'] == 0) {
-            if (!$aliAccount = FL::input()->post('ali_account', '')) {
-                $data = array(
-                    'errCode' => 1,
-                    'errMsg' => '支付宝账号不能为空'
-                );
-                echo json_encode($data);
-                exit;
-            }
-            if (!$aliName = FL::input()->post('ali_name', '')) {
-                $data = array(
-                    'errCode' => 1,
-                    'errMsg' => '支付宝所有者真实姓名不能为空'
-                );
-                echo json_encode($data);
-                exit;
-            }
+        switch($commodity['COMMODITY_TYPE']) {
+            case 0:
+                if (!$aliAccount = FL::input()->post('ali_account', '')) {
+                    $data = array(
+                        'errCode' => 1,
+                        'errMsg' => '支付宝账号不能为空'
+                    );
+                    echo json_encode($data);
+                    exit;
+                }
+                if (!$aliName = FL::input()->post('ali_name', '')) {
+                    $data = array(
+                        'errCode' => 1,
+                        'errMsg' => '支付宝所有者真实姓名不能为空'
+                    );
+                    echo json_encode($data);
+                    exit;
+                }
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
         }
 
 
