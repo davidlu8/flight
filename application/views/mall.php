@@ -20,10 +20,14 @@
 <div class="mall-wrapper">
     <div class="rowline">
         <div class="left">
-            ddd
+            <div class="block">
+                sdfsdf
+            </div>
         </div>
         <div class="right">
-            dsdf
+            <div class="block">
+                eee
+            </div>
         </div>
     </div>
 </div>

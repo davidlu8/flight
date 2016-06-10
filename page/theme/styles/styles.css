@@ -140,5 +140,8 @@ div.rowline div.left {
 div.rowline div.right {
     width: 50%;
     float: left;
+}
 
+div.rowline div.block {
+    background: #FFF;
 }
