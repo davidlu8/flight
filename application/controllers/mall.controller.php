@@ -48,7 +48,7 @@ class mallControl extends baseControl {
         $commodityDal = Load::model('commodity');
         $data['item'] = $commodityDal->find($commodity_id);
         echo '<pre>';
-        print_r($item);
+        print_r($data['item']);
 
         FL::view('mall_item', $data);
     }
