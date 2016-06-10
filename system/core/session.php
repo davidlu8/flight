@@ -3,6 +3,7 @@ class session {
     private $sessionData;
     function __construct() {
         session_start();
+        echo '1';
         $this->sessionData = $_SESSION;
     }
 
