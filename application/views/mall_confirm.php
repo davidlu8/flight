@@ -16,7 +16,8 @@
         <img src="<?php echo $item['COMMODITY_IMAGE'] ?>"  width="40%" />
     </div>
     <div class="name">
-        <?php echo $item['COMMODITY_NAME'] ?>
+        <?php echo $item['COMMODITY_NAME'] ?><br/>
+        话费积分：<span class="text-danger"><?php echo number_format($item['COMMODITY_PRICE'], 0) ?></span>
     </div>
     <div class="price">
         <div class="exchange">
