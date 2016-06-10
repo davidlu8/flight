@@ -13,7 +13,7 @@
 <body class="mall">
 <div class="item-wrapper">
     <div class="imageBlock">
-        <img src="<?php echo $item['COMMODITY_IMAGE'] ?>"  width="100%" />
+        <img src="<?php echo $item['COMMODITY_IMAGE'] ?>"  width="40%" />
     </div>
     <div class="name">
         <?php echo $item['COMMODITY_NAME'] ?>
