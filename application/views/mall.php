@@ -18,10 +18,14 @@
     </div>
 </header>
 <div class="mall-wrapper">
-    <ul class="listblock">
-        <li>sdfsdf</li>
-        <li class="right">sdfsdf</li>
-    </ul>
+    <div class="rowline">
+        <div class="left">
+            ddd
+        </div>
+        <div class="right">
+            dsdf
+        </div>
+    </div>
 </div>
 </body>
 </html>

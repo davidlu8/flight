@@ -128,18 +128,17 @@ div.mall-wrapper .col-xs-5 {
     border: solid 1px #ccc;
 }
 
-ul.listblock {
-    margin: 0;
-    padding: 0;
+div.rowline {
+    width: 100%;
 }
 
-ul.listblock li {
-    background: #FFF;
+div.rowline div.left {
+    width: 50%;
     float: left;
-    list-style: none;
-    width: 45%;
 }
 
-ul.listblock li.right {
-    margin-left: 1rem;
+div.rowline div.right {
+    width: 50%;
+    float: left;
+
 }
