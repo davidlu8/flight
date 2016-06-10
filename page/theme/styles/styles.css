@@ -193,7 +193,7 @@ div.head-wrapper div.name  {
 }
 
 div.head-wrapper div.price {
-    padding: 0 1rem;
+    padding: 0 1rem 1rem;
 }
 
 div.head-wrapper div.price div.exchange {
