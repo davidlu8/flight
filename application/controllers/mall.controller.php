@@ -37,8 +37,11 @@ class mallControl extends baseControl {
     }
 
     public function item($id) {
-        echo '<pre>';
-        print_r($_SESSION);
+        if (!$id = FL::session()->get('id', 0)) {
+            header('Location: /mall', 302);
+            exit;
+        }
+
     }
 
     public function history() {
