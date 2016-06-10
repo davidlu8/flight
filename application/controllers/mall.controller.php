@@ -39,14 +39,14 @@ class mallControl extends baseControl {
         FL::view('mall_index', $data);
     }
 
-    public function item($id) {
+    public function item($commodity_id) {
         if (!$id = FL::session()->get('id', 0)) {
             header('Location: /mall', 302);
             exit;
         }
 
         $commodityDal = Load::model('commodity');
-        $data['item'] = $commodityDal->find($id);
+        $data['item'] = $commodityDal->find($commodity_id);
         echo '<pre>';
         print_r($item);
 
