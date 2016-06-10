@@ -15,6 +15,12 @@
     <div class="imageBlock">
         <img src="<?php echo $item['COMMODITY_IMAGE'] ?>"  width="100%" />
     </div>
+    <div class="name">
+        <?php echo $item['COMMODITY_NAME'] ?>
+    </div>
+    <div class="price">
+
+    </div>
 </div>
 </body>
 </html>
