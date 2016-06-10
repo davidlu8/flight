@@ -145,3 +145,7 @@ div.rowline div.block {
 div.rowline div.right div.block {
     margin-left: 0.8rem;
 }
+
+div.clear {
+    clear: both;
+}

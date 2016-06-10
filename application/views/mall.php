@@ -28,6 +28,7 @@
         </div>
         <?php endforeach ?>
     </div>
+    <div class="clear"></div>
     <?php endforeach ?>
 </div>
 </body>
