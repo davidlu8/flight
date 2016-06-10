@@ -15,7 +15,7 @@
 <header class="mall">
     <div class="row">
         <div class="col-xs-6">.col-xs-6</div>
-        <div class="col-xs-6">.col-xs-6</div>
+        <div class="col-xs-6 text-right">.col-xs-6</div>
     </div>
 </header>
 <div class="mall-wrapper">
