@@ -141,6 +141,7 @@ div.rowline div.block {
 
 div.rowline div.right div.block {
     margin-left: 0.8rem;
+    padding: 1rem 0;
 }
 
 div.rowline div.block div.imageBlock {
@@ -162,7 +163,6 @@ div.rowline div.block div.price {
     margin: 0 auto;
     text-align: left;
     line-height: 2rem;
-    margin-bottom: 1rem;
 }
 
 div.rowline div.block div.count {
