@@ -149,6 +149,7 @@ div.rowline div.right div.block {
 div.rowline div.block div.imageBlock {
     width: 85%;
     height: 5rem;
+    margin: 0 auto;
 }
 
 div.clear {
