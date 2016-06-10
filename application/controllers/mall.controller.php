@@ -70,6 +70,7 @@ class mallControl extends baseControl {
         $userattr = $userattrDal->find($id);
         $commodityDal = Load::model('commodity');
         $commodity = $commodityDal->find($commodityID);
+        echo DB::lastQuery();
 
         echo '<pre>';
         print_r($commodity);
