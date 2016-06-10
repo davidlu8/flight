@@ -23,7 +23,7 @@
     </div>
 </div>
 <div class="desc-title">
-    <input type="text" name="alAccount" class="span3" value="" placeholder="输入支付宝账号" /><br/>
+    <input type="text" name="alAccount" class="login-field" value="" placeholder="输入支付宝账号" /><br/>
     <input type="text" name="alAccount" class="span3" value="" placeholder="支付宝所有者真实姓名" /><br/>
 </div>
 <div class="desc-wrapper">
