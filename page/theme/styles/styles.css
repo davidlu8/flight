@@ -149,7 +149,7 @@ div.rowline div.block div.imageBlock {
     width: 85%;
     margin: 0 auto;
     vertical-align: middle;
-    padding: 2rem 0;
+    padding: 1rem 0 1.5rem;
 }
 
 div.rowline div.block div.name {
