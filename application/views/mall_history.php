@@ -21,7 +21,7 @@
 </header>
 
 <div class="mall-wrapper">
-    <ul class="list-group">
+    <ul class="history">
         <li>sdfsdfsdf</li>
         <li>sdfsdfsdf</li>
         <li>sdfsdfsdf</li>
