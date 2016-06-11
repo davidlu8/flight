@@ -20,13 +20,11 @@
     </table>
 </header>
 
-<div class="mall-wrapper">
-    <ul class="history">
-        <li>sdfsdfsdf</li>
-        <li>sdfsdfsdf</li>
-        <li>sdfsdfsdf</li>
-        <li>sdfsdfsdf</li>
-    </ul>
-</div>
+<ul class="history">
+    <li>sdfsdfsdf</li>
+    <li>sdfsdfsdf</li>
+    <li>sdfsdfsdf</li>
+    <li>sdfsdfsdf</li>
+</ul>
 </body>
 </html>
