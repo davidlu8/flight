@@ -242,7 +242,7 @@ ul.history {
 
 ul.history li {
     list-style: none;
-    border-bottom: dotted 1px #666;
+    border-bottom: dotted 1px #999;
     padding: 0 1rem;
     line-height: 3.5rem;
 }
