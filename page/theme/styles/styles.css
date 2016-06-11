@@ -233,3 +233,14 @@ div.desc-title input {
     width: 100%;
     margin: 0 0 1rem;
 }
+
+ul.history {
+    width: 100%;
+    padding: 1rem;
+    background: #FFF;
+}
+
+ul.history li {
+    list-style: none;
+    border-bottom: solid 1px #ccc;
+}
