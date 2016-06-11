@@ -109,6 +109,15 @@ class mallControl extends baseControl {
                     echo json_encode($data);
                     exit;
                 }
+
+                $commodityexchangeDal = Load::model('commodityexchange');
+                $data = array(
+                    'EXCHANGE_COMMODITY_ID' => $commodity['COMMODITY_ID'],
+                    'EXCHANGE_USER_ID' => $userattr['USERATTR_USER_ID'],
+                    'EXCHANGE_ALI_ACCOUNT' => $aliAccount,
+                    'EXCHANGE_ALI_NAME' => $aliName,
+                );
+                $commodityexchangeDal->insert($data);
                 break;
             case 1:
                 break;
