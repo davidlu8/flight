@@ -73,6 +73,9 @@ class mallControl extends baseControl {
             exit;
         }
 
+        $userattrDal = Load::model('userattr');
+        $data['userattr'] = $userattrDal->find($id);
+
         $commodityexchangeDal = Load::model('commodityexchange');
         $filterData = array(
             'where' => array(

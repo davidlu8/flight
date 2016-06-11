@@ -15,7 +15,7 @@
     <table class="table">
         <tr>
             <td>积分余额：<span class="text-warning"><?php echo $userattr['USERATTR_CREDIT'] ?></span></td>
-            <td class="text-right"><a href="/mall/history" class="block text-primary">兑换记录</a></td>
+            <td class="text-right"></td>
         </tr>
     </table>
 </header>
