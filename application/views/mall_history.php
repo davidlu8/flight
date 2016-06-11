@@ -25,7 +25,7 @@
     <li>
         兑换<span class="text-danger">[<?php echo $item['COMMODITY_NAME'] ?>]</span>商品
         <div class="date">
-            <?php echo date('m/d', strtotime($item['EXCHANGE_ADD_TIME'])) ?>
+            <?php echo date('m/d H:i', strtotime($item['EXCHANGE_ADD_TIME'])) ?>
         </div>
     </li>
     <?php endforeach ?>
