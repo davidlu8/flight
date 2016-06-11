@@ -64,7 +64,28 @@ class mallControl extends baseControl {
     }
 
     public function history() {
+        if (!$id = FL::session()->get('id', 0)) {
+            $data = array(
+                'errCode' => 1,
+                'errMsg' => '帐号不正确'
+            );
+            echo json_encode($data);
+            exit;
+        }
 
+        $commodityexchangeDal = Load::model('commodityexchange');
+        $filterData = array(
+            'where' => array(
+                "EXCHANGE_USER_ID = '$id'"
+            ),
+            'order' => array(
+                'EXCHANGE_ADD_TIME' => 'DESC'
+            ),
+            'limit' => 20
+        );
+        $data['items'] = $commodityexchangeDal->items($filterData);
+
+        FL::view('mall_history', $data);
     }
 
     public function exchange() {
