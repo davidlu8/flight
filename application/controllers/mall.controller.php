@@ -110,6 +110,11 @@ class mallControl extends baseControl {
                     exit;
                 }
 
+                $data = array(
+                    'USERATTR_CREDIT' => $userattr['USERATTR_CREDIT'] - $commodity['COMMODITY_PRICE'],
+                );
+                $userattrDal->update($data, "USERATTR_USER_ID = '$id'");
+
                 $commodityexchangeDal = Load::model('commodityexchange');
                 $data = array(
                     'EXCHANGE_COMMODITY_ID' => $commodity['COMMODITY_ID'],
@@ -118,10 +123,64 @@ class mallControl extends baseControl {
                     'EXCHANGE_ALI_NAME' => $aliName,
                 );
                 $commodityexchangeDal->insert($data);
+
+                $credithistoryDal = Load::model('credithistory');
+                $data = array(
+                    'CREDITHISTORY_TYPE' => 100,
+                    'CREDITHISTORY_USER_ID' => $userattr['USERATTR_USER_ID'],
+                    'CREDITHISTORY_TITLE' => sprintf('兑换%s商品', $commodity['COMMODITY_NAME']),
+                    'CREDITHISTORY_VALUE' => $commodity['COMMODITY_PRICE'],
+                );
+                $credithistoryDal->insert($data);
                 break;
             case 1:
+                $data = array(
+                    'USERATTR_CREDIT' => $userattr['USERATTR_CREDIT'] - $commodity['COMMODITY_PRICE'],
+                );
+                $userattrDal->update($data, "USERATTR_USER_ID = '$id'");
+
+                $commodityexchangeDal = Load::model('commodityexchange');
+                $data = array(
+                    'EXCHANGE_COMMODITY_ID' => $commodity['COMMODITY_ID'],
+                    'EXCHANGE_USER_ID' => $userattr['USERATTR_USER_ID'],
+                    'EXCHANGE_ALI_ACCOUNT' => '',
+                    'EXCHANGE_ALI_NAME' => '',
+                );
+                $commodityexchangeDal->insert($data);
+
+                $credithistoryDal = Load::model('credithistory');
+                $data = array(
+                    'CREDITHISTORY_TYPE' => 100,
+                    'CREDITHISTORY_USER_ID' => $userattr['USERATTR_USER_ID'],
+                    'CREDITHISTORY_TITLE' => sprintf('兑换%s商品', $commodity['COMMODITY_NAME']),
+                    'CREDITHISTORY_VALUE' => $commodity['COMMODITY_PRICE'],
+                );
+                $credithistoryDal->insert($data);
                 break;
             case 2:
+                $data = array(
+                    'USERATTR_CREDIT' => $userattr['USERATTR_CREDIT'] - $commodity['COMMODITY_PRICE'],
+                    'USERATTR_GOLDCOIN' => $userattr['USERATTR_GOLDCOIN'] - $commodity['COMMODITY_VALUE'],
+                );
+                $userattrDal->update($data, "USERATTR_USER_ID = '$id'");
+
+                $commodityexchangeDal = Load::model('commodityexchange');
+                $data = array(
+                    'EXCHANGE_COMMODITY_ID' => $commodity['COMMODITY_ID'],
+                    'EXCHANGE_USER_ID' => $userattr['USERATTR_USER_ID'],
+                    'EXCHANGE_ALI_ACCOUNT' => '',
+                    'EXCHANGE_ALI_NAME' => '',
+                );
+                $commodityexchangeDal->insert($data);
+
+                $credithistoryDal = Load::model('credithistory');
+                $data = array(
+                    'CREDITHISTORY_TYPE' => 100,
+                    'CREDITHISTORY_USER_ID' => $userattr['USERATTR_USER_ID'],
+                    'CREDITHISTORY_TITLE' => sprintf('兑换%s商品', $commodity['COMMODITY_NAME']),
+                    'CREDITHISTORY_VALUE' => $commodity['COMMODITY_PRICE'],
+                );
+                $credithistoryDal->insert($data);
                 break;
         }
 
