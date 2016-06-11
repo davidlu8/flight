@@ -78,6 +78,10 @@ class mallControl extends baseControl {
 
         $commodityexchangeDal = Load::model('commodityexchange');
         $filterData = array(
+            'from' => 't_commodity_exchange e',
+            'join' => array(
+                array('t_commodity c', 'c.COMMODITY_ID = e.EXCHANGE_COMMODITY_ID', 'left'),
+            ),
             'where' => array(
                 "EXCHANGE_USER_ID = '$id'"
             ),
