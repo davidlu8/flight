@@ -243,4 +243,5 @@ ul.history {
 ul.history li {
     list-style: none;
     border-bottom: solid 1px #ccc;
+    line-height: 3.5rem;
 }
