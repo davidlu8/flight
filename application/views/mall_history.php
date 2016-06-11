@@ -21,10 +21,14 @@
 </header>
 
 <ul class="history">
-    <li>sdfsdfsdf</li>
-    <li>sdfsdfsdf</li>
-    <li>sdfsdfsdf</li>
-    <li>sdfsdfsdf</li>
+    <?php foreach($items as $item): ?>
+    <li>
+        兑换<span class="text-danger">[]</span>商品
+        <div class="price">
+
+        </div>
+    </li>
+    <?php endforeach ?>
 </ul>
 </body>
 </html>
