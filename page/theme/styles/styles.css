@@ -246,3 +246,7 @@ ul.history li {
     padding: 0 1rem;
     line-height: 3.5rem;
 }
+
+ul.history li div.date {
+    float: right;
+}
