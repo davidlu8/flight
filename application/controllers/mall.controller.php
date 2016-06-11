@@ -162,8 +162,11 @@ class mallControl extends baseControl {
                 $credithistoryDal->insert($data);
                 break;
             case 1:
+                $vipData = FL::config()->get('app.creditExchangeVip')[$commodity['COMMODITY_VALUE']];
                 $data = array(
                     'USERATTR_CREDIT' => $userattr['USERATTR_CREDIT'] - $commodity['COMMODITY_PRICE'],
+                    'USERATTR_VIP' => $vipData[0],
+                    'USERATTR_VIP_EXPIRETIME' => date('Y-m-d H:i:s', time() + $vipData[1]*24*3600),
                 );
                 $userattrDal->update($data, "USERATTR_USER_ID = '$id'");
 
@@ -187,11 +190,9 @@ class mallControl extends baseControl {
                 $credithistoryDal->insert($data);
                 break;
             case 2:
-                $vipData = FL::config()->get('app.creditExchangeVip')[$commodity['COMMODITY_VALUE']];
                 $data = array(
                     'USERATTR_CREDIT' => $userattr['USERATTR_CREDIT'] - $commodity['COMMODITY_PRICE'],
-                    'USERATTR_VIP' => $vipData[0],
-                    'USERATTR_VIP_EXPIRETIME' => date('Y-m-d H:i:s', time() + $vipData[1]*24*3600),
+                    'USERATTR_GOLDCOIN' => $userattr['USERATTR_GOLDCOIN'] + $commodity['COMMODITY_VALUE'],
                 );
                 $userattrDal->update($data, "USERATTR_USER_ID = '$id'");
 
