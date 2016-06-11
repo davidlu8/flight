@@ -1,6 +1,6 @@
 <?php
 return [
-    'vipvalue' => array(
+    'creditExchangeVip' => array(
         0 => array(1, 3),
         1 => array(1, 30),
         2 => array(2, 100),
