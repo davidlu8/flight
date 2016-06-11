@@ -169,6 +169,7 @@ class mallControl extends baseControl {
                     'EXCHANGE_USER_ID' => $userattr['USERATTR_USER_ID'],
                     'EXCHANGE_ALI_ACCOUNT' => '',
                     'EXCHANGE_ALI_NAME' => '',
+                    'EXCHANGE_STATUS' => 1,
                 );
                 $commodityexchangeDal->insert($data);
 
@@ -196,6 +197,7 @@ class mallControl extends baseControl {
                     'EXCHANGE_USER_ID' => $userattr['USERATTR_USER_ID'],
                     'EXCHANGE_ALI_ACCOUNT' => '',
                     'EXCHANGE_ALI_NAME' => '',
+                    'EXCHANGE_STATUS' => 1,
                 );
                 $commodityexchangeDal->insert($data);
 
