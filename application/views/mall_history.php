@@ -24,6 +24,7 @@
     <?php foreach($items as $item): ?>
     <li>
         兑换<span class="text-danger">[<?php echo $item['COMMODITY_NAME'] ?>]</span>商品
+        <?php if ($item['EXCHANGE_STATUS']): ?><span class="text-success">已完成</span><?php else: ?><span class="text-warning">审核中</span><?php endif ?>
         <div class="date">
             <?php echo date('m/d H:i', strtotime($item['EXCHANGE_ADD_TIME'])) ?>
         </div>
