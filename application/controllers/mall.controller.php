@@ -233,9 +233,4 @@ class mallControl extends baseControl {
         );
         echo json_encode($data);
     }
-
-    public function test() {
-        echo '<pre>';
-        print_r(FL::config()->get('app.creditExchangeVip'));
-    }
 }
