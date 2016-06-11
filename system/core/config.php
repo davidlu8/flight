@@ -10,7 +10,7 @@ class config {
             if (file_exists($configPath)) {
                 $config = include($configPath);
                 if (isset($config[$array[2]])) {
-                    return $config[$array[2];
+                    return $config[$array[2]];
                 }
             }
         }
