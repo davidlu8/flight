@@ -183,6 +183,15 @@ class mallControl extends baseControl {
                     'CREDITHISTORY_VALUE' => $commodity['COMMODITY_PRICE'],
                 );
                 $credithistoryDal->insert($data);
+
+                $goldcoinhistoryDal = Load::model('goldcoinhistory');
+                $data = array(
+                    'GOLDCOINHISTORY_TYPE' => 12,
+                    'GOLDCOINHISTORY_USER_ID' => $userattr['USERATTR_USER_ID'],
+                    'GOLDCOINHISTORY_TITLE' => sprintf('兑换%s商品', $commodity['COMMODITY_NAME']),
+                    'GOLDCOINHISTORY_VALUE' => $commodity['COMMODITY_VALUE'],
+                );
+                $goldcoinhistoryDal->insert($data);
                 break;
         }
 

@@ -6,5 +6,8 @@ return [
         2 => array(2, 100),
         3 => array(3, 360),
         4 => array(4, 1080),
-    )
+    ),
+    'goldcoinExchangeTitle' => array(
+        ''
+    ),
 ];
