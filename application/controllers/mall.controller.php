@@ -226,7 +226,6 @@ class mallControl extends baseControl {
                 break;
         }
 
-
         $data = array(
             'errCode' => 0,
             'errMsg' => '',
