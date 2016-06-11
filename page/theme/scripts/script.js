@@ -25,6 +25,7 @@ $(document).ready(function(){
             success: function(data) {
                 if (data.errCode == 0) {
                     alert(data.success);
+                    self.location.href='/mall';
                 } else {
                     alert(data.errMsg);
                 }
