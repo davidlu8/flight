@@ -28,6 +28,7 @@ class tvControl extends baseControl {
         );
         echo 'ccc';
         $item = $gifthistoryDal->item($filterData);
+        echo 'eee';
         echo DB::lastQuery();
 
         $data = [
