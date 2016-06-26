@@ -54,7 +54,7 @@ class tvControl extends baseControl {
         }
         echo $id;
 
-        $value = FL::input()->get('value', 0);
+        $value = FL::input()->post('value', 0);
         $userattrDal = Load::model('userattr');
         $userattr = $userattrDal->find($id);
         echo '<pre>';
