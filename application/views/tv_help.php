@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>ÈçºÎÉÏ¹«ÆÁ</title>
+    <title>å¦‚ä½•ä¸Šå…¬å±</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="/packages/flatui/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="/packages/flatui/css/flat-ui-pro.min.css">
@@ -14,20 +14,20 @@
 
 
     <ul class="tv">
-        <li><div class="serial"><span>1</span></div> µ¥´ÎËÍ³öÀñÎï¼ÛÖµ³¬¹ý150½ð±Ò¼´¿ÉÉÏ¹«ÆÁ</li>
-        <li><div class="serial"><span>2</span></div> µ¥´ÎËÍ³ö188¼þÒÔÉÏÀñÎï¿ÉÒÔÁ¬²¥£»</li>
+        <li><div class="serial"><span>1</span></div> å•æ¬¡é€å‡ºç¤¼ç‰©ä»·å€¼è¶…è¿‡150é‡‘å¸å³å¯ä¸Šå…¬å±</li>
+        <li><div class="serial"><span>2</span></div> å•æ¬¡é€å‡º188ä»¶ä»¥ä¸Šç¤¼ç‰©å¯ä»¥è¿žæ’­ï¼›</li>
         <!--
-             <li><div class="serial"><span>3</span></div> µ¥´ÎËÍ³ö¼ÛÖµ1000½ð±ÒÒÔÉÏÀñÎï¿ÉÒÔ³öÏÖìÅ¿á¶¯»­Ð§¹û£»</li>
-             <li><div class="serial"><span>4</span></div> µ¥´ÎËÍ³öÀñÎï×Ü¼Û³¬¹ý3000½ð±Ò¼´¿É¹«ÆÁËøÆÁ£¬3000½ð±Ò¿ÉËø60Ãë£¬1Íò½ð±Ò¿ÉËø200Ãë£¬½ð¶îÔ½´ó£¬Ê±¼äÔ½³¤£¬ÈÃÄã¶ÔËýµÄ°®°ÔÕ¼Õû¸öÊÀ½ç°É¡£</li>
+             <li><div class="serial"><span>3</span></div> å•æ¬¡é€å‡ºä»·å€¼1000é‡‘å¸ä»¥ä¸Šç¤¼ç‰©å¯ä»¥å‡ºçŽ°ç‚«é…·åŠ¨ç”»æ•ˆæžœï¼›</li>
+             <li><div class="serial"><span>4</span></div> å•æ¬¡é€å‡ºç¤¼ç‰©æ€»ä»·è¶…è¿‡3000é‡‘å¸å³å¯å…¬å±é”å±ï¼Œ3000é‡‘å¸å¯é”60ç§’ï¼Œ1ä¸‡é‡‘å¸å¯é”200ç§’ï¼Œé‡‘é¢è¶Šå¤§ï¼Œæ—¶é—´è¶Šé•¿ï¼Œè®©ä½ å¯¹å¥¹çš„çˆ±éœ¸å æ•´ä¸ªä¸–ç•Œå§ã€‚</li>
       -->
     </ul>
 
     <div>
-        <span class="text-danger"> ËÍÀñÎïÊÇ·ñÒªÉÏ¹«ÆÁ£¨µãÑ¡Á¢¼´ÉúÐ§£©</span>
+        <span class="text-danger"> é€ç¤¼ç‰©æ˜¯å¦è¦ä¸Šå…¬å±ï¼ˆç‚¹é€‰ç«‹å³ç”Ÿæ•ˆï¼‰</span>
         <ul  class="options">
-            <li><input type="radio" name="tv" value="1" /> ÎÒÒªÉÏ¹«ÆÁ</li>
-            <li><input type="radio" name="tv" value="2" /> ÄäÃûÉÏ¹«ÆÁ</li>
-            <li><input type="radio" name="tv" value="0" /> ²»ÏëÉÏ¹«ÆÁ</li>
+            <li><input type="radio" name="tv" value="1" /> æˆ‘è¦ä¸Šå…¬å±</li>
+            <li><input type="radio" name="tv" value="2" /> åŒ¿åä¸Šå…¬å±</li>
+            <li><input type="radio" name="tv" value="0" /> ä¸æƒ³ä¸Šå…¬å±</li>
         </ul>
     </div>
 </div>
