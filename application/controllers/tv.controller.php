@@ -9,6 +9,8 @@ class tvControl extends baseControl {
     }
 
     public function index() {
+        $id = FL::input()->get('id', 0);
+        FL::session()->set('id', $id);
         $userinfoDal = Load::model('userinfo');
         $gifthistoryDal = Load::model('gifthistory');
         $giftDal = Load::model('gift');
