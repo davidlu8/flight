@@ -26,7 +26,7 @@ class tvControl extends baseControl {
     }
 
     public function help() {
-        $data = [];
-        FL::view('tv_help', $data);
+        echo 'ddd';
+        FL::view('tv_help', []);
     }
 }
