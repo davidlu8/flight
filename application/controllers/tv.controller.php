@@ -52,6 +52,7 @@ class tvControl extends baseControl {
             echo json_encode($data);
             exit;
         }
+        echo $id;
 
         $value = FL::input()->get('value', 0);
         $userattrDal = Load::model('userattr');
