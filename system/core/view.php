@@ -6,8 +6,8 @@ class view {
         if (file_exists($viewPath)) {
             if (count($data) > 0) {
                 extract($data);
-                include($viewPath);
             }
+            include($viewPath);
         } else {
             die('The file of template does not exist!');
         }
