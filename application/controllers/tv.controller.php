@@ -35,6 +35,7 @@ class tvControl extends baseControl {
 
     public function settings() {
         if (!$id = FL::session()->get('id', 0)) {
+            echo 'ddd';
             $data = [
                 'errCode' => 1,
                 'errMsg' => '用户ID不存在'
