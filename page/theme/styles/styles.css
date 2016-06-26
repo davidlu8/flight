@@ -139,10 +139,11 @@ div.rowline div.block {
     margin-bottom: 0.8rem;
     padding: 1rem 0;
     border: solid 1px #000;
+    line-height: 2.5rem;
 }
 
 div.rowline div.right div.block {
-    line-height: 2.5rem;
+    margin-left: 0.8rem;
 }
 
 div.rowline div.block div.imageBlock {
