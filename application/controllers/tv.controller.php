@@ -15,11 +15,15 @@ class tvControl extends baseControl {
         );
         $item = $gifthistoryDal->item($filterData);
 
-        $ownerInfo = $userinfoDal->find($item['GIFTHISTORY_OWNER_ID']);
-        $userInfo = $userinfoDal->find($item['GIFTHISTORY_USER_ID']);
-        $gift = $giftDal->find($item['GIFTHISTORY_GIFT_ID']);
+        $data = [
+            'ownerInfo' => $userinfoDal->find($item['GIFTHISTORY_OWNER_ID']),
+            'userInfo' => $userinfoDal->find($item['GIFTHISTORY_USER_ID']),
+            'gift' => $giftDal->find($item['GIFTHISTORY_GIFT_ID']),
+            'item' => $gifthistoryDal->item($filterData),
+        ];
 
         require APPPATH.'views/gift.php';
+        FL::view('tv_index', $data);
     }
 
     public function help() {
