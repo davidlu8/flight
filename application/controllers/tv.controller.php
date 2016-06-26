@@ -54,7 +54,7 @@ class tvControl extends baseControl {
         $data = [
             'errCode' => 0,
             'errMsg' => '',
-            'message' => '操作成功',
+            'success' => '操作成功',
         ];
         echo json_encode($data);
         exit;
