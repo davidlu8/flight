@@ -152,6 +152,11 @@ div.rowline div.block div.imageBlock {
     padding: 1rem 0 1.5rem;
 }
 
+div.rowline div.block div.imageBlock img {
+    width:100%;
+    height: 20rem;
+}
+
 div.rowline div.block div.name {
     width: 85%;
     margin: 0 auto;
