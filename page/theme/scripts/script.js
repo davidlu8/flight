@@ -32,6 +32,24 @@ $(document).ready(function(){
             }
         });
     });
+
+    $('input[name=tv_settings]').click(function() {
+        id = $(this).attr("value");
+        $.ajax({
+            url: '/mall/exchange',
+            type: "post",
+            data: $("form").serialize(),
+            dataType: "json",
+            success: function(data) {
+                if (data.errCode == 0) {
+                    alert(data.success);
+                    self.location.href='/mall';
+                } else {
+                    alert(data.errMsg);
+                }
+            }
+        });
+    });
 });
 
 function request(name) {
