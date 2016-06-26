@@ -21,4 +21,8 @@ class tvControl extends baseControl {
 
         require APPPATH.'views/gift.php';
     }
+
+    public function operate() {
+
+    }
 }
