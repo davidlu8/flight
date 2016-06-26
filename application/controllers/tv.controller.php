@@ -4,6 +4,10 @@ class tvControl extends baseControl {
         parent::__construct();
     }
 
+    public function set($id) {
+        FL::session()->set('id', $id);
+    }
+
     public function index() {
         $userinfoDal = Load::model('userinfo');
         $gifthistoryDal = Load::model('gifthistory');
@@ -30,6 +34,30 @@ class tvControl extends baseControl {
     }
 
     public function settings() {
+        if (!$id = FL::session()->get('id', 0)) {
+            $data = [
+                'errCode' => 1,
+                'errMsg' => '用户ID不存在'
+            ];
+            echo json_encode($data);
+            exit;
+        }
+
+        $value = FL::input()->get('value', 0);
+        $userattrDal = Load::model('userattr');
+        $userattr = $userattrDal->find($id);
+        $data = array(
+            'USERATTR_TV' => $value
+        );
+        $userattrDal->update($data, "USERATTR_USER_ID = '$id'");
+
+        $data = [
+            'errCode' => 0,
+            'errMsg' => '',
+            'message' => '操作成功',
+        ];
+        echo json_encode($data);
+        exit;
 
     }
 }
