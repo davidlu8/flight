@@ -26,8 +26,6 @@ class tvControl extends baseControl {
             )
         );
         $item = $gifthistoryDal->item($filterData);
-        echo 'eee';
-        echo DB::lastQuery();
 
         $data = [
             'ownerInfo' => $userinfoDal->find($item['GIFTHISTORY_OWNER_ID']),
