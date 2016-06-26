@@ -34,7 +34,6 @@ class tvControl extends baseControl {
     }
 
     public function settings() {
-        echo 'ddd';
         if (!$id = FL::session()->get('id', 0)) {
             $data = [
                 'errCode' => 1,
@@ -44,13 +43,16 @@ class tvControl extends baseControl {
             exit;
         }
 
+        echo 'ddd';
         $value = FL::input()->get('value', 0);
         $userattrDal = Load::model('userattr');
         $userattr = $userattrDal->find($id);
-        $data = array(
-            'USERATTR_TV' => $value
-        );
-        $userattrDal->update($data, "USERATTR_USER_ID = '$id'");
+        if ($userattr['USERATTR_TV'] != $value) {
+            $data = array(
+                'USERATTR_TV' => $value
+            );
+            $userattrDal->update($data, "USERATTR_USER_ID = '$id'");
+        }
 
         $data = [
             'errCode' => 0,
