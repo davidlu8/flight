@@ -109,6 +109,7 @@ class BaseModel {
 
     function item($filterData = array()) {
         $sql = $this->formatFilter($filterData);
+        echo $sql;
         return DB::fetch($sql);
     }
 
