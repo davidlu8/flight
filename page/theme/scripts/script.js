@@ -34,8 +34,8 @@ $(document).ready(function(){
     });
 
     $('input[name=tv_setting]').click(function() {
-
         var value = $(this).attr("value");
+        alert(value);
         $.ajax({
             url: '/tv/settings',
             type: "post",
