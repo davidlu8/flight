@@ -12,6 +12,9 @@ class testControl extends baseControl {
     }
 
     public function index() {
+        $id = FL::input()->get('id', 0);
+        $userattrDal = Load::model('userattr');
+        $data['userattr'] = $userattrDal->find($id);
         $commodityDal = Load::model('commodity');
         $filterData = array(
             'order' => array(
