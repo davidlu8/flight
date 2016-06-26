@@ -34,6 +34,7 @@ class tvControl extends baseControl {
     }
 
     public function settings() {
+        echo 'ddd';
         if (!$id = FL::session()->get('id', 0)) {
             $data = [
                 'errCode' => 1,
