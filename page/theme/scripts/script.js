@@ -33,7 +33,7 @@ $(document).ready(function(){
         });
     });
 
-    $('input[name=tv_settings]').click(function() {
+    $('input[name=tv_setting]').click(function() {
         var value = $(this).attr("value");
         $.ajax({
             url: '/tv/settings',
