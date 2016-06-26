@@ -33,8 +33,6 @@ class tvControl extends baseControl {
             'gift' => $giftDal->find($item['GIFTHISTORY_GIFT_ID']),
             'item' => $gifthistoryDal->item($filterData),
         ];
-        echo '<pre>';
-        print_r($data);
 
         FL::view('tv_index', $data);
     }
