@@ -13,6 +13,14 @@ class tvControl extends baseControl {
         $gifthistoryDal = Load::model('gifthistory');
         $giftDal = Load::model('gift');
         $filterData = array(
+            'select' => ['h.*', 'a.USERATTR_TV'],
+            'form' => 't_user_gift_history h',
+            'join' => [
+                ['t_user_attr a', 'a.USERATTR_USER_ID = h.GIFTHISTORY_OWNER_ID', 'left']
+            ],
+            'where' => [
+                'a.USERATTR_TV >= 0'
+            ],
             'order' => array(
                 'GIFTHISTORY_ADD_TIME' => 'desc',
             )
