@@ -22,7 +22,8 @@ class tvControl extends baseControl {
         require APPPATH.'views/gift.php';
     }
 
-    public function operate() {
-
+    public function help() {
+        $data = [];
+        FL::view('tv_help', $data);
     }
 }
