@@ -57,12 +57,15 @@ class tvControl extends baseControl {
         $value = FL::input()->get('value', 0);
         $userattrDal = Load::model('userattr');
         $userattr = $userattrDal->find($id);
+        echo '<pre>';
+        print_r($userattr);
         if ($userattr['USERATTR_TV'] != $value) {
             $data = array(
                 'USERATTR_TV' => $value
             );
             $userattrDal->update($data, "USERATTR_USER_ID = '$id'");
         }
+        echo DB::lastQuery();
 
         $data = [
             'errCode' => 0,
