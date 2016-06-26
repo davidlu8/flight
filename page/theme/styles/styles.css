@@ -142,8 +142,12 @@ div.rowline div.block {
     line-height: 2.5rem;
 }
 
+div.rowline div.left div.block {
+    margin-right: 0.4rem;
+}
+
 div.rowline div.right div.block {
-    margin-left: 0.8rem;
+    margin-left: 0.4rem;
 }
 
 div.rowline div.block div.imageBlock {
