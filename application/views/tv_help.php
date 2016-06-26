@@ -26,9 +26,9 @@
     <div>
         <span class="text-danger"> 送礼物是否要上公屏（点选立即生效）</span>
         <ul  class="options">
-            <li><input type="radio" name="tv_setting" value="1" /> 我要上公屏</li>
-            <li><input type="radio" name="tv_setting" value="2" /> 匿名上公屏</li>
-            <li><input type="radio" name="tv_setting" value="0" /> 不想上公屏</li>
+            <li><input type="radio" name="tv_setting" value="0" /> 我要上公屏</li>
+            <li><input type="radio" name="tv_setting" value="1" /> 匿名上公屏</li>
+            <li><input type="radio" name="tv_setting" value="-1" /> 不想上公屏</li>
         </ul>
     </div>
 </div>

@@ -34,11 +34,11 @@ $(document).ready(function(){
     });
 
     $('input[name=tv_settings]').click(function() {
-        id = $(this).attr("value");
+        var value = $(this).attr("value");
         $.ajax({
             url: '/tv/settings',
             type: "post",
-            data: $("form").serialize(),
+            data: {value: value},
             dataType: "json",
             success: function(data) {
                 if (data.errCode == 0) {
