@@ -22,7 +22,6 @@ class tvControl extends baseControl {
             'item' => $gifthistoryDal->item($filterData),
         ];
 
-        require APPPATH.'views/gift.php';
         FL::view('tv_index', $data);
     }
 
