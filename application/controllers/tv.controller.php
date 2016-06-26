@@ -9,6 +9,7 @@ class tvControl extends baseControl {
     }
 
     public function index() {
+        echo 'ddd';
         $userinfoDal = Load::model('userinfo');
         $gifthistoryDal = Load::model('gifthistory');
         $giftDal = Load::model('gift');
