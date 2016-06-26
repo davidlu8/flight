@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/packages/flatui/css/flat-ui-pro.min.css">
     <link rel="stylesheet" href="/page/theme/styles/styles.css">
     <script type="text/javascript" charset="utf-8" src="/packages/jquery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/page/theme/scripts/script.js"></script>
 </head>
 <body>
 <div class="body-wrapper">
@@ -25,9 +26,9 @@
     <div>
         <span class="text-danger"> 送礼物是否要上公屏（点选立即生效）</span>
         <ul  class="options">
-            <li><input type="radio" name="tv" value="1" /> 我要上公屏</li>
-            <li><input type="radio" name="tv" value="2" /> 匿名上公屏</li>
-            <li><input type="radio" name="tv" value="0" /> 不想上公屏</li>
+            <li><input type="radio" name="tv_setting" value="1" /> 我要上公屏</li>
+            <li><input type="radio" name="tv_setting" value="2" /> 匿名上公屏</li>
+            <li><input type="radio" name="tv_setting" value="0" /> 不想上公屏</li>
         </ul>
     </div>
 </div>
