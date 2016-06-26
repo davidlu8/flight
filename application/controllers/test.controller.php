@@ -6,7 +6,7 @@
  * Time: 14:18
  */
 
-class tvControl extends baseControl {
+class testControl extends baseControl {
     public function __construct() {
         parent::__construct();
     }
