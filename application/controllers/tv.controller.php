@@ -35,16 +35,14 @@ class tvControl extends baseControl {
 
     public function settings() {
         if (!$id = FL::session()->get('id', 0)) {
-            echo $id;
             $data = [
                 'errCode' => 1,
-                'errMsg' => 'ÓÃ»§ID²»´æÔÚ'
+                'errMsg' => 'ç”¨æˆ·IDä¸å­˜åœ¨'
             ];
             echo json_encode($data);
             exit;
         }
 
-        echo $id;
         $value = FL::input()->get('value', 0);
         $userattrDal = Load::model('userattr');
         $userattr = $userattrDal->find($id);
@@ -58,7 +56,7 @@ class tvControl extends baseControl {
         $data = [
             'errCode' => 0,
             'errMsg' => '',
-            'success' => '²Ù×÷³É¹¦',
+            'success' => 'æ“ä½œæˆåŠŸ',
         ];
         echo json_encode($data);
         exit;
