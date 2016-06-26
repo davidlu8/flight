@@ -12,7 +12,6 @@ class tvControl extends baseControl {
         $userinfoDal = Load::model('userinfo');
         $gifthistoryDal = Load::model('gifthistory');
         $giftDal = Load::model('gift');
-        echo 'ddd';
         $filterData = array(
             'select' => ['h.*', 'a.USERATTR_TV'],
             'from' => 't_user_gift_history h',
@@ -26,7 +25,6 @@ class tvControl extends baseControl {
                 'GIFTHISTORY_ADD_TIME' => 'desc',
             )
         );
-        echo 'ccc';
         $item = $gifthistoryDal->item($filterData);
         echo 'eee';
         echo DB::lastQuery();
