@@ -26,9 +26,10 @@ class tvControl extends baseControl {
     }
 
     public function help() {
-        $data = [
-            'id' => FL::input()->get('id'),
-        ];
-        FL::view('tv_help', $data);
+        FL::view('tv_help');
+    }
+
+    public function settings() {
+
     }
 }

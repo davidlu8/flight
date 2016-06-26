@@ -1,7 +1,7 @@
 <?php
 class view {
     public $viewFolder = APPPATH.'views/';
-    function __construct($viewName, $data) {
+    function __construct($viewName, $data = []) {
         $viewPath = $this->viewFolder.$viewName.'.php';
         if (file_exists($viewPath)) {
             if (count($data) > 0) {
