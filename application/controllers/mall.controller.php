@@ -8,25 +8,46 @@ class mallControl extends baseControl {
     }
 
     public function index() {
+    		$sign="";
         if (!$id = FL::session()->get('id', 0)) {
             $id = FL::input()->get('id', 0);
             $timestamp = FL::input()->get('timestamp', 0);
             $sign = FL::input()->get('sign', '');
 
-            if (Common::makeSign(array($id, $timestamp)) != $sign) {
-                //exit('签名不正确');
-            }
+           // if (Common::makeSign(array($id, $timestamp)) != $sign) {
+           //     //exit('签名不正确');
+           // }
             FL::session()->set('id', $id);
+            FL::session()->set('sign', $sign);
+        }
+        else
+        {
+        	$sign= FL::session()->get('sign', '');
         }
 
+				$userDal = Load::model('user');
         $userattrDal = Load::model('userattr');
+        
+        $items = $userDal->find($id);
+        
+				$pwd=$items['USER_PASSWORD'];
+				if($pwd=="")
+					$pwd=md5("");
+        $localSign=md5("847se4^273".$id.$pwd);
+
+       	if($localSign!=$sign)
+       	{
+       			exit("int err");
+       	}
+        
+        
         $data['userattr'] = $userattrDal->find($id);
 
         $commodityDal = Load::model('commodity');
         $filterData = array(
             'order' => array(
-                'COMMODITY_WEIGHT' => 'desc',
-                'COMMODITY_ID' => 'desc'
+                'COMMODITY_WEIGHT' => 'asc',
+                'COMMODITY_PRICE' => 'asc',
             )
         );
         $list = array();
@@ -118,7 +139,13 @@ class mallControl extends baseControl {
             echo json_encode($data);
             exit;
         }
-
+        
+        
+         $data = array(
+                   'COMMODITY_COUNT' => ($commodity['COMMODITY_COUNT']+1),
+                );
+				$commodityDal->update($data, "COMMODITY_ID = '$commodityID'");
+				
         switch($commodity['COMMODITY_TYPE']) {
             case 0:
                 if (!$aliAccount = FL::input()->post('ali_account', '')) {
