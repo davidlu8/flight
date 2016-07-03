@@ -98,6 +98,14 @@ a.title-tv {
     float: right;
 }
 
+a.title-tv {
+    float: right;
+}
+
+a.title-tv img {
+    vertical-align: middle;
+}
+
 h6.tip-title {
     font-size: 2rem;
     border-left:solid 0.5rem coral;
