@@ -95,6 +95,7 @@ ul.options li {
 }
 
 a.title-tv {
+    float: left;
 }
 
 h6.tip-title {
